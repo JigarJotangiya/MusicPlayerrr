@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/video_ic_select_all" android:id="@+id/action_select_all" android:title="@string/coocent_select_all" app:iconTint="@android:color/holo_red_light" app:showAsAction="ifRoom"/>
+    <item android:icon="@drawable/video_ic_delete" android:id="@+id/action_delete" android:title="@string/coocent_delete" app:showAsAction="ifRoom"/>
+</menu>

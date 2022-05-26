@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:background="@color/transparent_66" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="2dp">
+    <RelativeLayout android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <coocent.music.player.widget.SquareRoundImageView android:id="@+id/rl_album" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/albumArt" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_centerVertical="true"/>
+        </coocent.music.player.widget.SquareRoundImageView>
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_album">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/song_time">
+                <TextView android:textSize="14sp" android:textColor="@color/default_text_color" android:ellipsize="end" android:id="@+id/song_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:singleLine="true" android:textDirection="locale" android:paddingStart="12dp" style="@style/TextAppearance.AppCompat.Body1"/>
+                <TextView android:textSize="12sp" android:textColor="@color/default_text_color" android:ellipsize="end" android:id="@+id/song_artist" android:paddingTop="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:singleLine="true" android:layout_below="@+id/song_title" android:textDirection="locale" android:paddingStart="12dp" style="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"/>
+            </LinearLayout>
+            <TextView android:textSize="12sp" android:textColor="@color/default_text_color" android:ellipsize="end" android:id="@+id/song_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_centerVertical="true" android:layout_toStartOf="@+id/rl_right" style="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle"/>
+            <coocent.music.player.widget.EqualizerView android:id="@+id/song_equalizerView" android:visibility="gone" android:layout_width="12dp" android:layout_height="18dp" android:layout_centerVertical="true" android:layout_marginStart="15dp" android:layout_toStartOf="@+id/rl_right" app:animDuration="5000" app:foregroundColor="@color/yellow"/>
+            <RelativeLayout android:id="@+id/rl_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                <ImageView android:id="@+id/popup_menu" android:background="?attr/selectableItemBackgroundBorderless" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_button04_more"/>
+                <CheckBox android:theme="@style/My_CheckBox" android:id="@+id/cb_select" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="5dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

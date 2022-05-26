@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/iv_root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_art_tab_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ViewFlipper android:gravity="center" android:layout_gravity="center" android:id="@+id/view_flipper" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_marginTop="15dp" android:layout_weight="4" android:layoutDirection="ltr">
+            <androidx.cardview.widget.CardView android:layout_gravity="center" android:id="@+id/cv_album" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="15dp">
+                <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/iv_image_1" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                    <ImageView android:id="@+id/iv_mv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:src="@drawable/ic_mv_not_loaded" android:layout_marginEnd="20dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0"/>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:gravity="center" android:layout_gravity="center" android:id="@+id/cv_ad" android:layout_width="match_parent" android:layout_height="match_parent" app:cardCornerRadius="15dp">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/ll_native" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </androidx.cardview.widget.CardView>
+        </ViewFlipper>
+        <RelativeLayout android:gravity="center_vertical" android:id="@+id/playcontrol" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_below="@+id/iv_image_1" android:paddingStart="8dp" android:paddingEnd="8dp">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/lrc" android:background="?attr/selectableItemBackgroundBorderless" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_play_page10"/>
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_lyric_set" android:background="?attr/selectableItemBackgroundBorderless" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10dp" app:srcCompat="@drawable/ic_play_page09"/>
+            <com.coocent.lyriclibrary.view.TwoLyricView android:id="@+id/twoLyricView" android:layout_width="wrap_content" android:layout_height="30dp" android:layout_marginTop="10dp" android:layout_centerVertical="true" android:layout_marginStart="9dp" android:layout_marginEnd="12dp" android:layout_toStartOf="@+id/lrc" android:layout_toEndOf="@+id/iv_lyric_set" app:twoLyricCurrentDefaultTextColor="@color/default_sub_text_color" app:twoLyricCurrentTextColor="@color/colorAccent" app:twoLyricDefaultLabel="@string/music_eq_no_lyrics_found" app:twoLyricMaxLine="1" app:twoLyricNormalTextColor="@color/default_sub_text_color" app:twoLyricPadding="0dp" app:twoLyricTextSize="14sp"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/rl_other_option" android:background="@color/transparent" android:paddingTop="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="0dp" android:baselineAligned="false" android:layout_weight="1" android:layout_marginStart="20dp" android:layout_marginEnd="20dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/rl_favorite" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_favorite" android:background="?attr/selectableItemBackgroundBorderless" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_play_page11"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/rl_sound_effect" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_sound_effect" android:background="?attr/selectableItemBackgroundBorderless" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_play_page12" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_add" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_add_to_playlist" android:background="?attr/selectableItemBackgroundBorderless" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_play_page13" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_share" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_share" android:background="?attr/selectableItemBackgroundBorderless" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_play_page19" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/rl_option" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_option" android:background="?attr/selectableItemBackgroundBorderless" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_play_page14" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.coocent.lyriclibrary.view.LyricView android:id="@+id/lyricView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:lyricDefaultLabel="@string/music_eq_no_lyrics_found"/>
+</RelativeLayout>

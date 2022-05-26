@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:opacity="opaque">
+    <item android:gravity="fill" android:drawable="@android:color/white"/>
+    <item>
+        <bitmap android:gravity="top|left|right|center_vertical|center_horizontal|fill_horizontal|center" android:src="@drawable/ic_splash_top"/>
+    </item>
+    <item android:gravity="bottom|center_vertical|center_horizontal|center" android:top="36dp" android:bottom="64dp">
+        <bitmap android:gravity="bottom|center_vertical|center_horizontal|center" android:src="@drawable/ic_app_name_horizontal"/>
+    </item>
+</layer-list>

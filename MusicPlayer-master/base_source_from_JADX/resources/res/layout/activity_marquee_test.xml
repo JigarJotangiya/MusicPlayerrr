@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/edgeLightingLayout" android:background="#999999" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="64dp">
+            <TextView android:gravity="center_vertical" android:id="@+id/edgeLighting" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/marquee_title" android:onClick="onClick"/>
+            <com.coocent.marquee.MarqueeSmallCircleView android:id="@+id/marqueeSmallCircleView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true" app:circleStyle="1"/>
+        </RelativeLayout>
+        <TextView android:gravity="center_vertical" android:id="@+id/otherActivity" android:background="#999999" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Other Activity" android:layout_below="@+id/edgeLightingLayout" android:onClick="onClick"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/openPlayer" android:background="#999999" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Open Player" android:layout_below="@+id/otherActivity" android:onClick="onClick"/>
+        <TextView android:gravity="center_vertical" android:id="@+id/tv_start_settings2" android:background="#999999" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="start MarqueeSettings2Activity" android:layout_below="@+id/openPlayer" android:onClick="onClick"/>
+    </RelativeLayout>
+    <com.coocent.marquee.MarqueeSweepGradientView android:id="@+id/marqueeSweepGradientView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

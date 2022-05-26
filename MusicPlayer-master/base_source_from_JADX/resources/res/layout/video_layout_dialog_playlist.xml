@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/view_top" android:background="@drawable/video_drawable_dialog_linear_gradient_angle180" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    <LinearLayout android:orientation="vertical" android:background="#d9000000" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/tv_playlist" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textDirection="locale"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_play_list" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never"/>
+    </LinearLayout>
+</LinearLayout>

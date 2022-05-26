@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@color/permission_bg_color" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="end" android:id="@+id/iv_permission_close" android:layout_width="15dp" android:layout_height="15dp" android:src="@drawable/desktop_lyrics_close"/>
+    <TextView android:textSize="13sp" android:textColor="@color/permission_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="10dp" android:text="@string/suspensions_permission" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+    <VideoView android:layout_gravity="center_horizontal" android:id="@+id/video_view" android:layout_width="122dp" android:layout_height="220dp"/>
+    <RelativeLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <LinearLayout android:orientation="horizontal" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <TextView android:textColor="@android:color/black" android:id="@+id/tv_permission_cancel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/cancels" android:layout_marginStart="20dp"/>
+            <TextView android:textSize="15dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_permission_set" android:background="@drawable/btn_gradient_selector" android:layout_width="155dp" android:layout_height="30dp" android:text="@string/go_to_set"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

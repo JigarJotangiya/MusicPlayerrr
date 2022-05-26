@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="artist_item_option">
+        <item>@string/play</item>
+        <item>@string/add_to_queue</item>
+        <item>@string/music_eq_add_to_playlist</item>
+        <item>@string/artwork</item>
+        <item>@string/delete</item>
+        <item>@string/favorite</item>
+    </array>
+    <array name="artist_tab_name">
+        <item>@string/track</item>
+        <item>@string/album</item>
+    </array>
+    <array name="eq_name">
+        <item>Normal</item>
+        <item>Dance</item>
+        <item>Classical</item>
+        <item>Folk</item>
+        <item>Flat</item>
+        <item>Hip Hop</item>
+        <item>Pop</item>
+        <item>Heavy Metal</item>
+        <item>Jazz</item>
+        <item>Rock</item>
+    </array>
+    <array name="eq_tab_names">
+        <item>@string/equalizer</item>
+        <item>@string/tonevol</item>
+        <item>@string/limit</item>
+    </array>
+    <array name="eq_value">
+        <item>300, 300, 300, 0, 0,0,0,300,300,300</item>
+        <item>5000, 500, 500, 200, 200,-500,-500,-500,0,0</item>
+        <item>500, 300, 0, -1000, 300,300,-4000,3000,5500,5500</item>
+        <item>1000, 400, 300, 370, -2000,3000,5000,4000,4500,4000</item>
+        <item>5000, 0, 0, 2000, -300,-300,2000,2000,3000,3000</item>
+        <item>0, 0, 0, 0,0,0,-5000,-5000,-5000,-6000</item>
+        <item>2000, 300, 500, 0, 0,3000,4000,4000,5000,5000</item>
+        <item>2000, 300, 300, -2000, -2000,0,4000,4000,5000,5500</item>
+        <item>0, 0, 0, 3000, 3000,3000,0,2000,4000,5000</item>
+        <item>1000, 200, -2000, 3000, -1000,1000,1000,3000,5000,5500</item>
+    </array>
+    <array name="equalizer2_reverb_value">
+        <item>@string/equalizer2_s_room</item>
+        <item>@string/equalizer2_m_room</item>
+        <item>@string/equalizer2_l_room</item>
+        <item>@string/equalizer2_m_hall</item>
+        <item>@string/equalizer2_l_hall</item>
+        <item>@string/equalizer2_plate</item>
+        <item>@string/equalizer2_none</item>
+    </array>
+    <array name="equalizer2_reverb_value2">
+        <item>@string/equalizer2_none</item>
+        <item>@string/equalizer2_s_room</item>
+        <item>@string/equalizer2_m_room</item>
+        <item>@string/equalizer2_l_room</item>
+        <item>@string/equalizer2_m_hall</item>
+        <item>@string/equalizer2_l_hall</item>
+        <item>@string/equalizer2_plate</item>
+    </array>
+    <array name="equalizer_eq_name">
+        <item>Normal</item>
+        <item>Classical</item>
+        <item>Dance</item>
+        <item>Flat</item>
+        <item>Folk</item>
+        <item>Heavy Metal</item>
+        <item>Hip Hop</item>
+        <item>Jazz</item>
+        <item>Pop</item>
+        <item>Rock</item>
+    </array>
+    <array name="equalizer_eq_name_value">
+        <item>3, 0, 0, 0, 3</item>
+        <item>5, 3, -2, 4, 4</item>
+        <item>6, 0, 2, -2, 1</item>
+        <item>0, 0, 0, 0, 0</item>
+        <item>2, 0, 0, 2, -1</item>
+        <item>4, 1, 9, 3, 0</item>
+        <item>5, 3, 0, 1, 3</item>
+        <item>4, 2, -2, 2, 5</item>
+        <item>-1, 2, 5, 1, -2</item>
+        <item>5, 3, -1, 3, 5</item>
+    </array>
+    <array name="equalizer_new_eq_name">
+        <item>Classical</item>
+        <item>Dance</item>
+        <item>Flat</item>
+        <item>Jazz</item>
+        <item>Pop</item>
+        <item>Rock</item>
+        <item>On site</item>
+        <item>Club</item>
+        <item>Bass</item>
+        <item>Treble</item>
+        <item>Heavy Metal</item>
+        <item>Strong</item>
+        <item>Gentle</item>
+        <item>Blues</item>
+        <item>Ballad</item>
+        <item>Gather</item>
+    </array>
+    <array name="equalizer_new_eq_name_value">
+        <item>0,0,0,0,0,0,-6,-6,-6,-7</item>
+        <item>8,6,2,0,0,-4,-6,-6,0,0</item>
+        <item>0,0,0,0,0,0,0,0,0,0</item>
+        <item>3,3,1,2,-1,-1,0,1,2,4</item>
+        <item>-1,0,0,1,4,3,1,0,-1,1</item>
+        <item>5,2,-3,-6,-3,3,6,8,8,8</item>
+        <item>-4,0,5,6,7,6,3,2,1,0</item>
+        <item>0,0,2,6,6,6,2,0,0,0</item>
+        <item>6,4,6,2,0,0,0,0,0,0</item>
+        <item>9,9,9,5,0,4,11,11,11,11</item>
+        <item>-2,5,4,-2,-2,-1,2,3,1,4</item>
+        <item>10,10,5,-5,-3,2,8,10,11,12</item>
+        <item>2,0,-2,-4,-2,2,5,7,8,9</item>
+        <item>2,6,4,0,-2,-1,2,2,1,3</item>
+        <item>0,3,0,0,1,4,5,3,0,1</item>
+        <item>6,6,0,0,0,0,0,0,6,6</item>
+    </array>
+    <array name="equalizer_old_eq_name">
+        <item>Normal</item>
+        <item>Classical</item>
+        <item>Dance</item>
+        <item>Flat</item>
+        <item>Folk</item>
+        <item>Heavy Metal</item>
+        <item>Hip Hop</item>
+        <item>Jazz</item>
+        <item>Pop</item>
+        <item>Rock</item>
+        <item>Acoustic</item>
+        <item>Bass Boost</item>
+        <item>Treble Boost</item>
+        <item>Vocal Boost</item>
+        <item>HeadPhones</item>
+        <item>Deep</item>
+        <item>Electronic</item>
+        <item>Latin</item>
+        <item>Loud</item>
+        <item>Lounge</item>
+        <item>Piano</item>
+        <item>R&amp;B</item>
+    </array>
+    <array name="equalizer_old_eq_name_value">
+        <item>3, 0, 0, 0, 3</item>
+        <item>5, 3, -2, 4, 4</item>
+        <item>6, 0, 2, -2, 1</item>
+        <item>0, 0, 0, 0, 0</item>
+        <item>2, 0, 0, 2, -1</item>
+        <item>4, 1, 9, 3, 0</item>
+        <item>5, 3, 0, 1, 3</item>
+        <item>4, 2, -2, 2, 5</item>
+        <item>-1, 2, 5, 1, -2</item>
+        <item>5, 3, -1, 3, 5</item>
+        <item>7, 3, 0, 4, 4</item>
+        <item>10, 8, 2, 0, 0</item>
+        <item>0, 0, 2, 6, 8</item>
+        <item>8, 3, -1, 3, 8</item>
+        <item>-5, -4, 4, 3, -3</item>
+        <item>7, 6, -2, 4, -2</item>
+        <item>6, 0, 3, 0, -8</item>
+        <item>7, 0, 0, 0, 7</item>
+        <item>2, 0, -1, 0, 2</item>
+        <item>6, 0, -1, -5, 5</item>
+        <item>-3, 0, 4, -2, 3</item>
+        <item>4, 1, 1, 6, 6</item>
+    </array>
+    <array name="eu_country">
+        <item>AT</item>
+        <item>BE</item>
+        <item>BG</item>
+        <item>HR</item>
+        <item>CY</item>
+        <item>CZ</item>
+        <item>DK</item>
+        <item>EE</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>TF</item>
+        <item>MF</item>
+        <item>DE</item>
+        <item>GR</item>
+        <item>HU</item>
+        <item>IE</item>
+        <item>IT</item>
+        <item>LV</item>
+        <item>LT</item>
+        <item>LU</item>
+        <item>MT</item>
+        <item>NL</item>
+        <item>PL</item>
+        <item>PT</item>
+        <item>RO</item>
+        <item>SK</item>
+        <item>SI</item>
+        <item>ES</item>
+        <item>SE</item>
+        <item>GB</item>
+        <item>VG</item>
+    </array>
+    <array name="favorite_tab_names">
+        <item>@string/track</item>
+        <item>@string/artist</item>
+        <item>@string/album</item>
+        <item>@string/playlist</item>
+    </array>
+    <array name="filter_duration">
+        <item>@string/none</item>
+        <item>@string/second1</item>
+        <item>@string/second2</item>
+        <item>@string/second3</item>
+        <item>@string/second4</item>
+        <item>@string/second5</item>
+        <item>@string/second6</item>
+    </array>
+    <array name="filter_duration_value">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </array>
+    <array name="genres_item_option">
+        <item>@string/play</item>
+        <item>@string/add_to_queue</item>
+        <item>@string/add_playlist</item>
+    </array>
+    <array name="gift_desc_key">
+        <item>camera_v1_desc</item>
+        <item>camera_v2_desc</item>
+        <item>camera_v3_desc</item>
+        <item>camera_v4_desc</item>
+        <item>hd_camera_v1_desc</item>
+        <item>hd_camera_v2_desc</item>
+        <item>hd_camera_v3_desc</item>
+        <item>hd_camera_v4_desc</item>
+        <item>beauty_camera_v1_desc</item>
+        <item>beauty_camera_v2_desc</item>
+        <item>beauty_camera_v3_desc</item>
+        <item>beauty_camera_v4_desc</item>
+        <item>selfie_camera_v1_desc</item>
+        <item>selfie_camera_v2_desc</item>
+        <item>selfie_camera_v3_desc</item>
+        <item>selfie_camera_v4_desc</item>
+        <item>sticker_camera_v1_desc</item>
+        <item>sticker_camera_v2_desc</item>
+        <item>sticker_camera_v3_desc</item>
+        <item>sticker_camera_v4_desc</item>
+        <item>ar_camera_v1_desc</item>
+        <item>ar_camera_v2_desc</item>
+        <item>ar_camera_v3_desc</item>
+        <item>ar_camera_v4_desc</item>
+        <item>photo_gallery_v1_desc</item>
+        <item>photo_gallery_v2_desc</item>
+        <item>photo_gallery_v3_desc</item>
+        <item>photo_gallery_v4_desc</item>
+        <item>photo_editor_v1_desc</item>
+        <item>photo_editor_v2_desc</item>
+        <item>photo_editor_v3_desc</item>
+        <item>photo_editor_v4_desc</item>
+        <item>photo_editor_v5_desc</item>
+        <item>photo_collage_v1_desc</item>
+        <item>photo_collage_v2_desc</item>
+        <item>photo_collage_v3_desc</item>
+        <item>photo_collage_v4_desc</item>
+        <item>photo_grid_v1_desc</item>
+        <item>photo_grid_v2_desc</item>
+        <item>photo_grid_v3_desc</item>
+        <item>photo_grid_v4_desc</item>
+        <item>video_editor_v1_desc</item>
+        <item>video_editor_v2_desc</item>
+        <item>video_editor_v3_desc</item>
+        <item>video_editor_v4_desc</item>
+        <item>video_maker_v1_desc</item>
+        <item>video_maker_v2_desc</item>
+        <item>video_maker_v3_desc</item>
+        <item>video_maker_v4_desc</item>
+        <item>music_player_v1_desc</item>
+        <item>music_player_v2_desc</item>
+        <item>music_player_v3_desc</item>
+        <item>music_player_v4_desc</item>
+        <item>video_player_v1_desc</item>
+        <item>video_player_v2_desc</item>
+        <item>video_player_v3_desc</item>
+        <item>video_player_v4_desc</item>
+        <item>equalizer_v1_desc</item>
+        <item>equalizer_v2_desc</item>
+        <item>equalizer_v3_desc</item>
+        <item>equalizer_v4_desc</item>
+        <item>bass_booster_v1_desc</item>
+        <item>bass_booster_v2_desc</item>
+        <item>bass_booster_v3_desc</item>
+        <item>bass_booster_v4_desc</item>
+        <item>volume_boost_v1_desc</item>
+        <item>volume_boost_v2_desc</item>
+        <item>volume_boost_v3_desc</item>
+        <item>volume_boost_v4_desc</item>
+        <item>weather_v1_desc</item>
+        <item>weather_v2_desc</item>
+        <item>weather_v3_desc</item>
+        <item>weather_v4_desc</item>
+        <item>weather_forecast_v1_desc</item>
+        <item>weather_forecast_v2_desc</item>
+        <item>weather_forecast_v3_desc</item>
+        <item>weather_forecast_v4_desc</item>
+        <item>weather_radar_v1_desc</item>
+        <item>weather_radar_v2_desc</item>
+        <item>weather_radar_v3_desc</item>
+        <item>weather_radar_v4_desc</item>
+        <item>pdf_scanner_v1_desc</item>
+        <item>screen_recorder_v1_desc</item>
+        <item>launcher_v1_desc</item>
+        <item>wallpaper_v1_desc</item>
+        <item>browser_v1_desc</item>
+        <item>file_manager_v1_desc</item>
+        <item>ringtone_cutter_v1_desc</item>
+        <item>music_cutter_v1_desc</item>
+        <item>flash_light_v1_desc</item>
+        <item>file_share_v1_desc</item>
+        <item>bubble_level_v1_desc</item>
+        <item>compass_v1_desc</item>
+        <item>qrcode_barcode_scanner_v1_desc</item>
+        <item>sound_meter_v1_desc</item>
+        <item>sound_recorder_v1_desc</item>
+        <item>note_v1_desc</item>
+    </array>
+    <array name="gift_desc_value">
+        <item>@string/coocent_camera_v1_desc</item>
+        <item>@string/coocent_camera_v2_desc</item>
+        <item>@string/coocent_camera_v3_desc</item>
+        <item>@string/coocent_camera_v4_desc</item>
+        <item>@string/coocent_hd_camera_v1_desc</item>
+        <item>@string/coocent_hd_camera_v2_desc</item>
+        <item>@string/coocent_hd_camera_v3_desc</item>
+        <item>@string/coocent_hd_camera_v4_desc</item>
+        <item>@string/coocent_beauty_camera_v1_desc</item>
+        <item>@string/coocent_beauty_camera_v2_desc</item>
+        <item>@string/coocent_beauty_camera_v3_desc</item>
+        <item>@string/coocent_beauty_camera_v4_desc</item>
+        <item>@string/coocent_selfie_camera_v1_desc</item>
+        <item>@string/coocent_selfie_camera_v2_desc</item>
+        <item>@string/coocent_selfie_camera_v3_desc</item>
+        <item>@string/coocent_selfie_camera_v4_desc</item>
+        <item>@string/coocent_sticker_camera_v1_desc</item>
+        <item>@string/coocent_sticker_camera_v2_desc</item>
+        <item>@string/coocent_sticker_camera_v3_desc</item>
+        <item>@string/coocent_sticker_camera_v4_desc</item>
+        <item>@string/coocent_ar_camera_v1_desc</item>
+        <item>@string/coocent_ar_camera_v2_desc</item>
+        <item>@string/coocent_ar_camera_v3_desc</item>
+        <item>@string/coocent_ar_camera_v4_desc</item>
+        <item>@string/coocent_photo_gallery_v1_desc</item>
+        <item>@string/coocent_photo_gallery_v2_desc</item>
+        <item>@string/coocent_photo_gallery_v3_desc</item>
+        <item>@string/coocent_photo_gallery_v4_desc</item>
+        <item>@string/coocent_photo_editor_v1_desc</item>
+        <item>@string/coocent_photo_editor_v2_desc</item>
+        <item>@string/coocent_photo_editor_v3_desc</item>
+        <item>@string/coocent_photo_editor_v4_desc</item>
+        <item>@string/coocent_photo_editor_v5_desc</item>
+        <item>@string/coocent_photo_collage_v1_desc</item>
+        <item>@string/coocent_photo_collage_v2_desc</item>
+        <item>@string/coocent_photo_collage_v3_desc</item>
+        <item>@string/coocent_photo_collage_v4_desc</item>
+        <item>@string/coocent_photo_grid_v1_desc</item>
+        <item>@string/coocent_photo_grid_v2_desc</item>
+        <item>@string/coocent_photo_grid_v3_desc</item>
+        <item>@string/coocent_photo_grid_v4_desc</item>
+        <item>@string/coocent_video_editor_v1_desc</item>
+        <item>@string/coocent_video_editor_v2_desc</item>
+        <item>@string/coocent_video_editor_v3_desc</item>
+        <item>@string/coocent_video_editor_v4_desc</item>
+        <item>@string/coocent_video_maker_v1_desc</item>
+        <item>@string/coocent_video_maker_v2_desc</item>
+        <item>@string/coocent_video_maker_v3_desc</item>
+        <item>@string/coocent_video_maker_v4_desc</item>
+        <item>@string/coocent_music_player_v1_desc</item>
+        <item>@string/coocent_music_player_v2_desc</item>
+        <item>@string/coocent_music_player_v3_desc</item>
+        <item>@string/coocent_music_player_v4_desc</item>
+        <item>@string/coocent_video_player_v1_desc</item>
+        <item>@string/coocent_video_player_v2_desc</item>
+        <item>@string/coocent_video_player_v3_desc</item>
+        <item>@string/coocent_video_player_v4_desc</item>
+        <item>@string/coocent_equalizer_v1_desc</item>
+        <item>@string/coocent_equalizer_v2_desc</item>
+        <item>@string/coocent_equalizer_v3_desc</item>
+        <item>@string/coocent_equalizer_v4_desc</item>
+        <item>@string/coocent_bass_booster_v1_desc</item>
+        <item>@string/coocent_bass_booster_v2_desc</item>
+        <item>@string/coocent_bass_booster_v3_desc</item>
+        <item>@string/coocent_bass_booster_v4_desc</item>
+        <item>@string/coocent_volume_boost_v1_desc</item>
+        <item>@string/coocent_volume_boost_v2_desc</item>
+        <item>@string/coocent_volume_boost_v3_desc</item>
+        <item>@string/coocent_volume_boost_v4_desc</item>
+        <item>@string/coocent_weather_v1_desc</item>
+        <item>@string/coocent_weather_v2_desc</item>
+        <item>@string/coocent_weather_v3_desc</item>
+        <item>@string/coocent_weather_v4_desc</item>
+        <item>@string/coocent_weather_forecast_v1_desc</item>
+        <item>@string/coocent_weather_forecast_v2_desc</item>
+        <item>@string/coocent_weather_forecast_v3_desc</item>
+        <item>@string/coocent_weather_forecast_v4_desc</item>
+        <item>@string/coocent_weather_radar_v1_desc</item>
+        <item>@string/coocent_weather_radar_v2_desc</item>
+        <item>@string/coocent_weather_radar_v3_desc</item>
+        <item>@string/coocent_weather_radar_v4_desc</item>
+        <item>@string/coocent_pdf_scanner_v1_desc</item>
+        <item>@string/coocent_screen_recorder_v1_desc</item>
+        <item>@string/coocent_launcher_v1_desc</item>
+        <item>@string/coocent_wallpaper_v1_desc</item>
+        <item>@string/coocent_browser_v1_desc</item>
+        <item>@string/coocent_file_manager_v1_desc</item>
+        <item>@string/coocent_ringtone_cutter_v1_desc</item>
+        <item>@string/coocent_music_cutter_v1_desc</item>
+        <item>@string/coocent_flash_light_v1_desc</item>
+        <item>@string/coocent_file_share_v1_desc</item>
+        <item>@string/coocent_bubble_level_v1_desc</item>
+        <item>@string/coocent_compass_v1_desc</item>
+        <item>@string/coocent_qrcode_barcode_scanner_v1_desc</item>
+        <item>@string/coocent_sound_meter_v1_desc</item>
+        <item>@string/coocent_sound_recorder_v1_desc</item>
+        <item>@string/coocent_note_v1_desc</item>
+    </array>
+    <array name="gift_title_key">
+        <item>Camera</item>
+        <item>HD Camera</item>
+        <item>Beauty Camera</item>
+        <item>Selfie Camera</item>
+        <item>Sticker Camera</item>
+        <item>AR Camera</item>
+        <item>Photo Gallery</item>
+        <item>Photo Editor</item>
+        <item>Photo Collage</item>
+        <item>Photo Grid</item>
+        <item>Video Editor</item>
+        <item>Video Maker</item>
+        <item>Music Player</item>
+        <item>Video Player</item>
+        <item>Equalizer</item>
+        <item>Bass Booster</item>
+        <item>Volume boost</item>
+        <item>Weather</item>
+        <item>Weather Forecast</item>
+        <item>Weather Radar</item>
+        <item>PDF Scanner</item>
+        <item>Screen Recorder</item>
+        <item>Launcher</item>
+        <item>Wallpaper</item>
+        <item>Browser</item>
+        <item>File Manager</item>
+        <item>Ringtone Cutter</item>
+        <item>Music Cutter</item>
+        <item>Flash Light</item>
+        <item>File Share</item>
+        <item>Bubble Level</item>
+        <item>Compass</item>
+        <item>QRcode Barcode Scanner</item>
+        <item>Sound Meter</item>
+        <item>Sound Recorder</item>
+        <item>Note</item>
+    </array>
+    <array name="gift_title_value">
+        <item>@string/coocent_camera</item>
+        <item>@string/coocent_hd_camera</item>
+        <item>@string/coocent_beauty_camera</item>
+        <item>@string/coocent_selfie_camera</item>
+        <item>@string/coocent_sticker_camera</item>
+        <item>@string/coocent_ar_camera</item>
+        <item>@string/coocent_photo_gallery</item>
+        <item>@string/coocent_title_activity_filter_show</item>
+        <item>@string/coocent_photo_collage</item>
+        <item>@string/coocent_photo_grid</item>
+        <item>@string/coocent_video_maker</item>
+        <item>@string/coocent_video_maker</item>
+        <item>@string/coocent_music_eq_app_name</item>
+        <item>@string/coocent_video_player</item>
+        <item>@string/coocent_eq_dialog_title</item>
+        <item>@string/coocent_bass_booster</item>
+        <item>@string/coocent_volume_boost</item>
+        <item>@string/coocent_weather</item>
+        <item>@string/coocent_weather_forecast</item>
+        <item>@string/coocent_weather_radar</item>
+        <item>@string/coocent_pdf_scanner</item>
+        <item>@string/coocent_screen_recorder</item>
+        <item>@string/coocent_launcher</item>
+        <item>@string/coocent_photos_setwallpaper_setas_wallpaper</item>
+        <item>@string/coocent_browser</item>
+        <item>@string/coocent_file_manager</item>
+        <item>@string/coocent_ringtone_cutter</item>
+        <item>@string/coocent_music_cutter</item>
+        <item>@string/coocent_flash_light</item>
+        <item>@string/coocent_file_share</item>
+        <item>@string/coocent_bubble_level</item>
+        <item>@string/coocent_compass</item>
+        <item>@string/coocent_qrcode_barcode_scanner</item>
+        <item>@string/coocent_sound_meter</item>
+        <item>@string/coocent_sound_recorder</item>
+        <item>@string/coocent_note</item>
+    </array>
+    <array name="lybrary_tab_names">
+        <item>@string/track</item>
+        <item>@string/artist</item>
+        <item>@string/album</item>
+        <item>@string/playlist</item>
+        <item>@string/folder2</item>
+    </array>
+    <array name="m_sleep_timer">
+        <item>@string/time_1</item>
+        <item>@string/time_2</item>
+        <item>@string/time_3</item>
+        <item>@string/time_4</item>
+        <item>@string/time_5</item>
+        <item>@string/time_6</item>
+        <item>@string/time_7</item>
+    </array>
+    <array name="option">
+        <item>@string/music_crop</item>
+        <item>@string/sleep_timer</item>
+        <item>@string/artwork</item>
+        <item>@string/delete</item>
+    </array>
+    <array name="playlist_item_option_1">
+        <item>@string/play</item>
+    </array>
+    <array name="playlist_item_option_2">
+        <item>@string/play</item>
+        <item>@string/rename</item>
+        <item>@string/delete</item>
+    </array>
+    <array name="playlist_track_item_option">
+        <item>@string/play_next</item>
+        <item>@string/add_to_queue</item>
+        <item>@string/add_playlist</item>
+        <item>@string/music_crop</item>
+        <item>@string/details</item>
+        <item>@string/favorite</item>
+        <item>@string/share</item>
+        <item>@string/remove</item>
+    </array>
+    <array name="preset_valune">
+        <item>@string/nomal_preset</item>
+        <item>@string/classical_preset</item>
+        <item>@string/dance_preset</item>
+        <item>@string/flat_preset</item>
+        <item>@string/folk_preset</item>
+        <item>@string/heavy_metal</item>
+        <item>@string/hip_hop_preset</item>
+        <item>@string/jazz</item>
+        <item>@string/pop_preset</item>
+        <item>@string/rock</item>
+        <item>@string/rb_preset</item>
+        <item>@string/latin_preset</item>
+        <item>@string/acoustic_preset</item>
+        <item>@string/piano_preset</item>
+        <item>@string/electronic_preset</item>
+        <item>@string/vocal_booster_preset</item>
+        <item>@string/deep_preset</item>
+    </array>
+    <array name="reverberation_tab_names">
+        <item>@string/none</item>
+        <item>@string/equalizer2_s_room</item>
+        <item>@string/equalizer2_m_room</item>
+        <item>@string/equalizer2_l_room</item>
+        <item>@string/equalizer2_m_hall</item>
+        <item>@string/equalizer2_l_hall</item>
+        <item>@string/equalizer2_plate</item>
+    </array>
+    <array name="room_name">
+        <item>@string/none</item>
+        <item>@string/s_room</item>
+        <item>@string/m_room_</item>
+        <item>@string/room_style_default</item>
+        <item>@string/m_hall</item>
+        <item>@string/l_hall</item>
+        <item>@string/plate</item>
+    </array>
+    <array name="show_privacy_country">
+        <item>CN</item>
+    </array>
+    <array name="sleep_timer">
+        <item>@string/none</item>
+        <item>@string/time_15</item>
+        <item>@string/time_30</item>
+        <item>@string/time_45</item>
+        <item>@string/time_60</item>
+        <item>@string/time_75</item>
+        <item>@string/time_90</item>
+        <item>@string/custom</item>
+    </array>
+    <array name="sleep_timer_array">
+        <item>@string/none</item>
+        <item>@string/time_15</item>
+        <item>@string/time_30</item>
+        <item>@string/time_45</item>
+        <item>@string/time_60</item>
+        <item>@string/time_75</item>
+        <item>@string/custom</item>
+    </array>
+    <array name="sound_effect">
+        <item>@string/reverse3d</item>
+        <item>@string/rotate3d</item>
+        <item>@string/megabass</item>
+        <item>@string/purevvoice</item>
+        <item>@string/tonehigh</item>
+        <item>@string/tonelow</item>
+    </array>
+    <array name="sound_effect_edit">
+        <item>@string/edit</item>
+        <item>@string/rename</item>
+        <item>@string/delete</item>
+    </array>
+    <array name="target_country">
+        <item>jp</item>
+        <item>kr</item>
+        <item>us</item>
+        <item>in</item>
+        <item>br</item>
+        <item>ru</item>
+        <item>id</item>
+        <item>th</item>
+        <item>au</item>
+        <item>ca</item>
+        <item>mx</item>
+    </array>
+    <array name="track_filter">
+        <item>@string/none</item>
+        <item>@string/second1</item>
+        <item>@string/second2</item>
+        <item>@string/second3</item>
+        <item>@string/second4</item>
+        <item>@string/second5</item>
+        <item>@string/second6</item>
+    </array>
+    <array name="track_item_option">
+        <item>@string/play_next</item>
+        <item>@string/add_to_queue</item>
+        <item>@string/add_playlist</item>
+        <item>@string/music_crop</item>
+        <item>@string/details</item>
+        <item>@string/favorite</item>
+        <item>@string/share</item>
+        <item>@string/delete</item>
+    </array>
+    <array name="transfromer">
+        <item>@string/transfromer_0</item>
+        <item>@string/transfromer_1</item>
+        <item>@string/transfromer_2</item>
+        <item>@string/transfromer_3</item>
+        <item>@string/transfromer_4</item>
+        <item>@string/transfromer_5</item>
+        <item>@string/transfromer_6</item>
+        <item>@string/transfromer_7</item>
+        <item>@string/transfromer_8</item>
+        <item>@string/transfromer_9</item>
+        <item>@string/transfromer_10</item>
+        <item>@string/transfromer_11</item>
+        <item>@string/transfromer_12</item>
+        <item>@string/transfromer_13</item>
+    </array>
+    <array name="transition_animation">
+        <item>@string/fade_down_diffusion</item>
+        <item>@string/left_to_right</item>
+        <item>@string/immersion_diffusion</item>
+        <item>@string/up_down_diffusion</item>
+        <item>@string/flip_horizontal</item>
+        <item>@string/flip_vertical</item>
+        <item>@string/sink</item>
+        <item>@string/none</item>
+    </array>
+    <array name="transition_animation_value">
+        <item>@null</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </array>
+    <array name="video_eq_name">
+        <item>Custom</item>
+        <item>Normal</item>
+        <item>Classical</item>
+        <item>Dance</item>
+        <item>Flat</item>
+        <item>Folk</item>
+        <item>Heavy Metal</item>
+        <item>Hip Hop</item>
+        <item>Jazz</item>
+        <item>Pop</item>
+        <item>Rock</item>
+    </array>
+    <array name="video_eq_room">
+        <item>NONE</item>
+        <item>S ROOM</item>
+        <item>M ROOM</item>
+        <item>L ROOM</item>
+        <item>M HALL</item>
+        <item>L HALL</item>
+        <item>PLATE</item>
+    </array>
+    <array name="video_eq_value">
+        <item>0, 0, 0, 0, 0</item>
+        <item>3, 0, 0, 0, 3</item>
+        <item>5, 3, -2, 4, 4</item>
+        <item>6, 0, 2, -2, 1</item>
+        <item>0, 0, 0, 0, 0</item>
+        <item>2, 0, 0, 2, -1</item>
+        <item>4, 1, 9, 3, 0</item>
+        <item>5, 3, 0, 1, 3</item>
+        <item>4, 2, -2, 2, 5</item>
+        <item>-1, 2, 5, 1, -2</item>
+        <item>5, 3, -1, 3, 5</item>
+    </array>
+    <array name="weeklist">
+        <item>1 week</item>
+        <item>2 weeks</item>
+        <item>3 weeks</item>
+        <item>4 weeks</item>
+        <item>5 weeks</item>
+        <item>6 weeks</item>
+        <item>7 weeks</item>
+        <item>8 weeks</item>
+        <item>9 weeks</item>
+        <item>10 weeks</item>
+        <item>11 weeks</item>
+        <item>12 weeks</item>
+    </array>
+    <array name="weeks">
+        <item>@string/weeks_sun</item>
+        <item>@string/weeks_Mon</item>
+        <item>@string/weeks_Tue</item>
+        <item>@string/weeks_Wed</item>
+        <item>@string/weeks_Thu</item>
+        <item>@string/weeks_Fri</item>
+        <item>@string/weeks_Sat</item>
+    </array>
+</resources>

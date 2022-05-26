@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/cl_control" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rl_playlist_des" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp">
+            <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_art" android:background="@drawable/playlist_top_item_bg_shape" android:layout_width="120dp" android:layout_height="120dp" android:src="@drawable/ic_home_ic_albums" android:scaleType="centerCrop" app:riv_corner_radius="10dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_playlist" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/iv_art" android:layout_alignBottom="@+id/iv_art" android:layout_marginStart="20dp" android:layout_marginEnd="20dp" android:layout_toEndOf="@+id/iv_art">
+                <TextView android:textSize="16sp" android:textColor="@color/default_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/playlist_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="歌单名称" android:maxLines="2" android:textAlignment="viewStart"/>
+                <TextView android:textSize="12sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/playlist_des" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/playlist_des" android:maxLines="2" android:singleLine="true" android:textAlignment="viewStart"/>
+                <TextView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+                <TextView android:textSize="14sp" android:textColor="@color/default_text_color" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="start" android:id="@+id/tv_edit_playlist" android:layout_width="wrap_content" android:layout_height="0dp" android:text="@string/edit_play_list" android:drawablePadding="15dp" android:layout_weight="1" android:drawableEnd="@drawable/ic_next1" android:textAlignment="viewStart"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_playlist_control" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:layout_constraintTop_toBottomOf="@+id/rl_playlist_des">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_favorite" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_favorite" android:background="@drawable/playlist_top_item_bg_shape" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_library_more_favorite"/>
+                <TextView android:textSize="16sp" android:textColor="@color/default_text_color" android:id="@+id/tvFavorite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/favorite"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_add_track" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_add_track" android:background="@drawable/playlist_top_item_bg_shape" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_library_more_add_tracks"/>
+                <TextView android:textSize="16sp" android:textColor="@color/default_text_color" android:id="@+id/tvAdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/add_music"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_sort" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <ImageView android:id="@+id/iv_sort" android:background="@drawable/playlist_top_item_bg_shape" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_library_more_sort"/>
+                <TextView android:textSize="16sp" android:textColor="@color/default_text_color" android:id="@+id/tvSort" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/music_eq_sort"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

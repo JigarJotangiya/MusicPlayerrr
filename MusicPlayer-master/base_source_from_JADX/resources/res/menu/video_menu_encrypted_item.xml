@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/action_play" android:orderInCategory="1" android:title="@string/coocent_video_play"/>
+    <item android:id="@+id/action_decrypt" android:orderInCategory="2" android:title="@string/video_decrypt"/>
+    <item android:id="@+id/action_delete" android:orderInCategory="3" android:title="@string/coocent_delete"/>
+    <item android:id="@+id/action_info" android:orderInCategory="3" android:title="@string/coocent_info"/>
+</menu>

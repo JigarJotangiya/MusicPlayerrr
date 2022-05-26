@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <View android:background="@color/white_20" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.coocent.library.CarModeView android:id="@+id/carModeView" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/ad_layout" app:carIsFavoriteVisible="true" app:carModeText="@string/coocent_car_mode"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ad_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

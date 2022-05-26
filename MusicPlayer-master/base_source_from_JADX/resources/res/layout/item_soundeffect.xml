@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_effect_item" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/item_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sound_effect_icon1"/>
+    <TextView android:textSize="15sp" android:textColor="@color/effect_textcolor" android:id="@+id/item_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/electronic" android:layout_weight="1" android:layout_marginStart="20dp"/>
+    <TextView android:textSize="12sp" android:textColor="@color/effect_accent" android:gravity="center" android:id="@+id/item_use" android:background="@drawable/bg_item_use" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="60dp" android:layout_height="wrap_content" android:text="@string/effect_use" android:layout_marginEnd="5dp"/>
+</LinearLayout>

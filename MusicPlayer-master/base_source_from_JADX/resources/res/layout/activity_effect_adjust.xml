@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/effect_bg" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/effect_bg" android:layout_width="match_parent" android:layout_height="50dp" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <ImageView android:id="@+id/iv_back" android:background="?attr/selectableItemBackgroundBorderless" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sound_ic_return" android:layout_centerVertical="true" app:tint="@color/effect_textcolor"/>
+        <TextView android:textSize="20sp" android:textColor="@color/effect_textcolor" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/equalizer_main_equalizer" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" android:layout_toStartOf="@+id/iv_switch" android:layout_toEndOf="@+id/iv_back"/>
+        <ImageView android:id="@+id/iv_switch" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sound_effect_switch_selector" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <com.coocent.musiceffect.view.BezierView android:id="@+id/bezier_view" android:layout_width="match_parent" android:layout_height="100dp" android:layout_marginTop="10dp"/>
+    <LinearLayout android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.coocent.musiceffect.view.PresetTextView android:textSize="13sp" android:textColor="@color/effect_textcolor" android:gravity="center" android:id="@+id/tv_preset" android:background="@drawable/bg_preset" android:layout_width="0dp" android:layout_height="35dp" android:text="@string/effect_custom" android:singleLine="true" android:drawablePadding="10dp" android:layout_weight="1" android:paddingStart="10dp" android:paddingEnd="10dp" android:layout_marginEnd="20dp"/>
+        <com.coocent.musiceffect.view.PresetTextView android:textSize="13sp" android:textColor="@color/effect_textcolor" android:gravity="center" android:id="@+id/tv_reverb" android:background="@drawable/bg_preset" android:layout_width="0dp" android:layout_height="35dp" android:text="@string/equalizer2_none" android:singleLine="true" android:drawablePadding="10dp" android:layout_weight="1" android:paddingStart="10dp" android:paddingEnd="10dp" android:layout_marginStart="20dp"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" android:layoutDirection="ltr">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_equalizer" android:layout_width="match_parent" android:layout_height="match_parent" android:overScrollMode="never" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="20dp" android:layout_marginBottom="20dp" android:layout_weight="0.8" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.coocent.musiceffect.view.EffectArcSeekbar android:id="@+id/sb_bass" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" app:arcMax="1000" app:arcProgress="0"/>
+            <TextView android:textSize="16sp" android:textColor="@color/effect_textcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equalizer_main_bass_boost"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <com.coocent.musiceffect.view.EffectArcSeekbar android:id="@+id/sb_virtual" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" app:arcMax="1000" app:arcProgress="0"/>
+            <TextView android:textSize="16sp" android:textColor="@color/effect_textcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equalizer_main_virtualizer"/>
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/ad_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

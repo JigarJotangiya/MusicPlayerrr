@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@android:id/background">
+        <shape>
+            <solid android:color="@color/eq_bar_bg_color"/>
+            <corners android:radius="50dp"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <shape>
+            <gradient android:startColor="@android:color/white" android:endColor="@color/colorAccent" android:angle="0"/>
+            <corners android:radius="4dp"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/rl_default_title" android:layout_width="match_parent" android:layout_height="@dimen/abc_action_bar_default_height_material">
+    <View android:id="@+id/rl_title_black" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rl_title_black">
+        <RelativeLayout android:id="@+id/rl_ico" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/ico_back" android:background="?attr/selectableItemBackgroundBorderless" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10dp"/>
+        </RelativeLayout>
+        <TextView android:textSize="20sp" android:textColor="@color/default_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/music_crop" android:layout_centerVertical="true" android:textDirection="locale" android:layout_marginStart="30dp" android:layout_toStartOf="@+id/ico_reset" android:layout_toEndOf="@+id/rl_ico"/>
+        <ImageView android:id="@+id/ico_save" android:background="?attr/selectableItemBackgroundBorderless" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eq_sound_effect_page_button03_save" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+        <ImageView android:id="@+id/ico_reset" android:background="?attr/selectableItemBackgroundBorderless" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eq_sound_effect_page_button02_reset" android:layout_centerVertical="true" android:layout_toStartOf="@+id/ico_save"/>
+    </RelativeLayout>
+</RelativeLayout>

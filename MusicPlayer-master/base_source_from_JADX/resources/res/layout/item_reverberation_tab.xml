@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:animateLayoutChanges="true" android:paddingStart="10dp" android:paddingEnd="10dp">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/reverberation_tab_item_bg" android:background="@drawable/reverberation_tab_item_oval_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/rl_room" android:layout_alignBottom="@+id/rl_room" android:layout_alignStart="@+id/rl_room" android:layout_alignEnd="@+id/rl_room"/>
+    <RelativeLayout android:id="@+id/rl_room" android:layout_width="wrap_content" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_eq_ic_none" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/none" android:lines="1" android:singleLine="true" android:layout_centerVertical="true" android:layout_marginEnd="10dp" android:layout_toEndOf="@+id/icon"/>
+    </RelativeLayout>
+</RelativeLayout>

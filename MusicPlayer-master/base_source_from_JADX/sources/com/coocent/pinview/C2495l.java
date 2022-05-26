@@ -1,0 +1,58 @@
+package com.coocent.pinview;
+
+/* renamed from: com.coocent.pinview.l */
+public final class C2495l {
+    public static final int abc_action_bar_home_description = 2131820548;
+    public static final int abc_action_bar_up_description = 2131820549;
+    public static final int abc_action_menu_overflow_description = 2131820550;
+    public static final int abc_action_mode_done = 2131820551;
+    public static final int abc_activity_chooser_view_see_all = 2131820552;
+    public static final int abc_activitychooserview_choose_application = 2131820553;
+    public static final int abc_capital_off = 2131820554;
+    public static final int abc_capital_on = 2131820555;
+    public static final int abc_menu_alt_shortcut_label = 2131820556;
+    public static final int abc_menu_ctrl_shortcut_label = 2131820557;
+    public static final int abc_menu_delete_shortcut_label = 2131820558;
+    public static final int abc_menu_enter_shortcut_label = 2131820559;
+    public static final int abc_menu_function_shortcut_label = 2131820560;
+    public static final int abc_menu_meta_shortcut_label = 2131820561;
+    public static final int abc_menu_shift_shortcut_label = 2131820562;
+    public static final int abc_menu_space_shortcut_label = 2131820563;
+    public static final int abc_menu_sym_shortcut_label = 2131820564;
+    public static final int abc_prepend_shortcut_label = 2131820565;
+    public static final int abc_search_hint = 2131820566;
+    public static final int abc_searchview_description_clear = 2131820567;
+    public static final int abc_searchview_description_query = 2131820568;
+    public static final int abc_searchview_description_search = 2131820569;
+    public static final int abc_searchview_description_submit = 2131820570;
+    public static final int abc_searchview_description_voice = 2131820571;
+    public static final int abc_shareactionprovider_share_with = 2131820572;
+    public static final int abc_shareactionprovider_share_with_application = 2131820573;
+    public static final int abc_toolbar_collapse_description = 2131820574;
+    public static final int coocent_confirm = 2131820740;
+    public static final int coocent_enter_pin_code = 2131820755;
+    public static final int coocent_note_password_forgot = 2131820813;
+    public static final int coocent_note_settings_password_answer = 2131820814;
+    public static final int coocent_note_settings_password_question = 2131820815;
+    public static final int coocent_restr_pin_enter_new_pin = 2131820857;
+    public static final int coocent_results_page_save_complete = 2131820858;
+    public static final int coocent_video_set_pin = 2131820949;
+    public static final int coocent_wrong_password = 2131820982;
+    public static final int coocent_wrong_pin_code = 2131820983;
+    public static final int forgot_pin_tips = 2131821182;
+    public static final int forgot_pin_title = 2131821183;
+    public static final int pin_have_password_title = 2131821593;
+    public static final int reset_pin_success = 2131821680;
+    public static final int retrieve_pin_code = 2131821684;
+    public static final int search_menu_title = 2131821731;
+    public static final int set_pin_code = 2131821754;
+    public static final int set_secret_answer_confirm_input_hint = 2131821757;
+    public static final int set_secret_answer_inconsistent_tip = 2131821758;
+    public static final int set_secret_answer_input_hint = 2131821759;
+    public static final int set_secret_pin_tips = 2131821760;
+    public static final int set_secret_question_input_hint = 2131821761;
+    public static final int set_secret_security_answer = 2131821762;
+    public static final int set_secret_security_question = 2131821763;
+    public static final int set_secret_tips = 2131821764;
+    public static final int status_bar_notification_info_overflow = 2131821853;
+}

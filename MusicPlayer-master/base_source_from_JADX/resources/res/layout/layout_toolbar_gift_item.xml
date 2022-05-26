@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/promotion_play_icon_layout" android:background="?android:attr/selectableItemBackground" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <net.coocent.android.xmlparser.widget.view.GiftSwitchView android:id="@+id/iv_gift_cover" android:layout_width="46dp" android:layout_height="46dp" android:scaleType="fitCenter" android:contentDescription="@string/ad"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <RelativeLayout android:id="@+id/bottom_control" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/custom_title"/>
+        <View android:id="@+id/underline" android:background="@color/title_line_color" android:layout_width="match_parent" android:layout_height="0.1dp" android:layout_below="@+id/defualt_title"/>
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recylerview" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/tip_layout" android:layout_below="@+id/underline" android:paddingStart="5dp" android:paddingEnd="5dp"/>
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/connect_error" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/connect_error"/>
+        <RelativeLayout android:id="@+id/tip_layout" android:background="@drawable/tip_artwork_bg" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+            <TextView android:textColor="@color/white" android:id="@+id/text_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/resource_tip"/>
+            <TextView android:textColor="@color/white" android:id="@+id/text_tip_click" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/resource_click" android:layout_below="@+id/text_tip"/>
+        </RelativeLayout>
+        <ProgressBar android:id="@+id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:indeterminateTint="@color/colorAccent"/>
+    </RelativeLayout>
+</RelativeLayout>

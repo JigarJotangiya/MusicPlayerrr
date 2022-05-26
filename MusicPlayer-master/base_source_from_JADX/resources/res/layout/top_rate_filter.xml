@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/main_5a_black" android:layout_width="match_parent" android:layout_height="64dp">
+    <TextView android:textColor="@color/half_white" android:id="@+id/song_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_centerVertical="true" android:layout_marginStart="20dp"/>
+    <RatingBar android:id="@+id/ratingbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:rating="0" android:stepSize="1" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/rl_filter_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true">
+        <TextView android:textColor="@drawable/item_accet_color_selector" android:id="@+id/filter_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_text"/>
+        <TextView android:textColor="@drawable/item_accet_color_selector" android:id="@+id/filter_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/filter_equal" android:layout_below="@+id/filter_text" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

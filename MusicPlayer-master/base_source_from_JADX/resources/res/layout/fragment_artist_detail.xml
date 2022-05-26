@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/bg_cover" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/iv_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/ad_layout">
+        <com.google.android.material.appbar.AppBarLayout android:id="@+id/applayout" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+            <com.google.android.material.appbar.CollapsingToolbarLayout android:layout_width="match_parent" android:layout_height="match_parent" app:contentScrim="@color/transparent" app:elevation="0dp" app:layout_scrollFlags="3" app:statusBarScrim="@color/transparent">
+                <RelativeLayout android:id="@+id/rl_artist_art" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="300dp">
+                    <ImageView android:id="@+id/top_bar_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                    <View android:id="@+id/ivmianbgcover" android:background="#661b1b1b" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <ImageView android:id="@+id/iv_change_artwork" android:background="?attr/selectableItemBackgroundBorderless" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:src="@drawable/home_ic_tracks_song_cover" android:layout_alignParentBottom="true" android:layout_marginEnd="20dp" android:layout_alignParentEnd="true"/>
+                    <TextView android:textSize="26sp" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/artist_content_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="@string/artist" android:maxLines="2" android:layout_alignParentBottom="true" android:layout_marginStart="20dp" android:layout_marginEnd="10dp" android:layout_toStartOf="@+id/iv_change_artwork"/>
+                </RelativeLayout>
+                <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:elevation="0dp" app:layout_collapseMode="1"/>
+            </com.google.android.material.appbar.CollapsingToolbarLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+        <RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <com.google.android.material.tabs.TabLayout android:id="@+id/tab" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_centerHorizontal="true" app:tabIndicatorFullWidth="false" app:tabRippleColor="@color/ripple_color" app:tabTextAppearance="@style/MyTabTextAppearance"/>
+            <coocent.music.player.widget.NoScrollViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tab"/>
+        </RelativeLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <View android:id="@+id/title_status_view" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <include layout="@layout/custom_title"/>
+    <ProgressBar android:id="@+id/progressbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:indeterminateTint="@color/colorAccent"/>
+</RelativeLayout>

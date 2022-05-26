@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.appbar.MaterialToolbar android:theme="@style/VideoTheme.ToolBar.Theme" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="@dimen/video_toolbar_height" app:menu="@menu/video_menu_videofolder" app:navigationIcon="@drawable/toolbar_btn_back_white" app:popupTheme="@style/VideoTheme.ToolBar.PopupTheme" app:title="@string/coocent_video_player"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tabs" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="@dimen/video_tab_height" android:layout_below="@+id/app_bar" app:tabIndicatorColor="?attr/videoTabIndicatorColor" app:tabIndicatorHeight="2dp" app:tabTextColor="?attr/videoTextColorPrimary"/>
+    <com.coocent.videolibrary.widget.view.VerticalSwipeRefreshLayout android:id="@+id/layout_refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tabs">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/layout_ads" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+            <androidx.viewpager2.widget.ViewPager2 android:id="@+id/view_pager2" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        </RelativeLayout>
+    </com.coocent.videolibrary.widget.view.VerticalSwipeRefreshLayout>
+</RelativeLayout>

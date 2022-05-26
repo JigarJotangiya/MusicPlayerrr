@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/bg_cover" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/cancel"/>
+    <ImageView android:id="@+id/bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/lyric_setting_shape" android:scaleType="centerCrop" android:layout_alignBottom="@+id/cancel"/>
+    <RelativeLayout android:id="@+id/rl_seekBar" android:paddingTop="25dp" android:paddingBottom="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <TextView android:textColor="@color/white" android:id="@+id/tv_tv_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/size" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/tv_t1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_ic_lrc_t01" android:layout_centerVertical="true" android:layout_marginStart="15dp" android:layout_toEndOf="@+id/tv_tv_size"/>
+        <ImageView android:id="@+id/tv_t2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_ic_lrc_t02" android:layout_centerVertical="true" android:layout_marginStart="15dp" android:layout_marginEnd="15dp" android:layout_alignParentEnd="true"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/tv_t2" android:layout_toEndOf="@+id/tv_t1">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:paddingStart="13dp" android:paddingEnd="13dp" android:layout_alignStart="@+id/seekbar" android:layout_alignEnd="@+id/seekbar">
+                <View android:background="@color/gray_light" android:layout_width="match_parent" android:layout_height="1dp"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/seekbar" android:layout_alignBottom="@+id/seekbar" android:paddingStart="13dp" android:paddingEnd="13dp" android:layout_alignStart="@+id/seekbar" android:layout_alignEnd="@+id/seekbar">
+                <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:background="@drawable/lyric_select_color_seek_bar_point" android:layout_width="8dp" android:layout_height="8dp" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:background="@drawable/lyric_select_color_seek_bar_point" android:layout_width="8dp" android:layout_height="8dp" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:background="@drawable/lyric_select_color_seek_bar_point" android:layout_width="8dp" android:layout_height="8dp" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageView android:background="@drawable/lyric_select_color_seek_bar_point" android:layout_width="8dp" android:layout_height="8dp" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:background="@drawable/lyric_select_color_seek_bar_point" android:layout_width="8dp" android:layout_height="8dp"/>
+            </LinearLayout>
+            <SeekBar android:id="@+id/seekbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:max="4" android:progressDrawable="@color/transparent" android:thumb="@drawable/lyric_text_size_seekbar_thumb" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@+id/line" android:background="@color/gray_line" android:layout_width="match_parent" android:layout_height="0.1dp" android:layout_below="@+id/rl_seekBar"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_color" android:paddingTop="25dp" android:paddingBottom="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/line" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <TextView android:textColor="@color/white" android:id="@+id/tv_tv_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lyric_color"/>
+        <RelativeLayout android:id="@+id/rl_green" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="15dp">
+            <ImageView android:id="@+id/iv_1" android:background="@drawable/lyric_select_color_green_shape" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/iv_1_1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_ic_lrc_color_selected" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_blue" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="15dp">
+            <ImageView android:id="@+id/iv_2" android:background="@drawable/lyric_select_color_blue_2_shape" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/iv_2_2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_ic_lrc_color_selected" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_popup" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="15dp">
+            <ImageView android:id="@+id/iv_3" android:background="@drawable/lyric_select_color_popup_shape" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/iv_3_3" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_ic_lrc_color_selected" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_pink" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="15dp">
+            <ImageView android:id="@+id/iv_4" android:background="@drawable/lyric_select_color_pink_shape" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/iv_4_4" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_ic_lrc_color_selected" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_yellow" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="15dp">
+            <ImageView android:id="@+id/iv_5" android:background="@drawable/lyric_select_color_yellow_shape" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/iv_5_5" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_ic_lrc_color_selected" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/rl_green_blue" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="15dp">
+            <ImageView android:id="@+id/iv_6" android:background="@drawable/lyric_select_color_green_blue_shape" android:layout_width="20dp" android:layout_height="20dp" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/iv_6_6" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/home_ic_lrc_color_selected" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/line2" android:background="@color/gray_line" android:layout_width="match_parent" android:layout_height="0.1dp" android:layout_below="@+id/ll_color"/>
+    <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/cancel" android:background="?attr/selectableItemBackground" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_below="@+id/line2"/>
+</RelativeLayout>

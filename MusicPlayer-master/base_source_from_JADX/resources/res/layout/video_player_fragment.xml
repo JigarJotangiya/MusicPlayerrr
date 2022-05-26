@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <com.google.android.material.appbar.AppBarLayout android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" android:layout_width="match_parent" android:layout_height="wrap_content" app:elevation="0dp">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/colorPrimary" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:popupTheme="@style/ThemeOverlay.AppCompat.DayNight"/>
+        <com.google.android.material.tabs.TabLayout android:id="@+id/tab_layout" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabIndicatorColor="@color/tabIndicatorColor" app:tabIndicatorHeight="2dp" app:tabMode="1" app:tabSelectedTextColor="@color/textColorHighlight" app:tabTextAppearance="@style/TabText" app:tabTextColor="@color/textColorLowlight"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.coocent.videolibrary.widget.view.VerticalSwipeRefreshLayout android:id="@+id/layout_refresh" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/layout_ads" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+            <com.coocent.videolibrary.widget.view.ScrollableViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+    </com.coocent.videolibrary.widget.view.VerticalSwipeRefreshLayout>
+</LinearLayout>

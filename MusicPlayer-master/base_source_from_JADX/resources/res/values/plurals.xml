@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="NNNtracksdeleted">
+        <item quantity="one">%d song was deleted.</item>
+        <item quantity="other">%d songs were deleted.</item>
+    </plurals>
+    <plurals name="NNNtrackstoplaylist">
+        <item quantity="one">@string/number_song_add_playlist</item>
+        <item quantity="other">@string/number_songs_add_playlist</item>
+    </plurals>
+    <plurals name="NNNtrackstoqueue">
+        <item quantity="one">@string/number_song_add_queue</item>
+        <item quantity="other">@string/number_songs_add_queue</item>
+    </plurals>
+    <plurals name="Nalbums">
+        <item quantity="one">@string/count_album</item>
+        <item quantity="other">@string/count_albums</item>
+    </plurals>
+    <plurals name="Nsongs">
+        <item quantity="zero">@string/count_songs</item>
+        <item quantity="one">@string/count_song</item>
+        <item quantity="other">@string/count_songs</item>
+    </plurals>
+    <plurals name="count_video">
+        <item quantity="one">%1$d video</item>
+        <item quantity="other">%1$d videos</item>
+    </plurals>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_bg" android:layout_width="match_parent" android:layout_height="0dp" android:src="0x7f0800a3" android:scaleType="centerCrop" app:layout_constraintBottom_toTopOf="@+id/ll_bottom" app:layout_constraintTop_toTopOf="0"/>
+    <include android:id="@+id/defualt_title2" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/custom_title"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_theme_icon" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="10dp" android:layout_marginBottom="15dp" app:layout_constraintBottom_toBottomOf="@+id/iv_bg" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/defualt_title2" app:srcCompat="0x7f0800a2"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/rl_custom" android:background="@drawable/theme_select_shape" android:paddingTop="3dp" android:paddingBottom="3dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="10dp" android:layout_marginBottom="15dp" app:layout_constraintBottom_toBottomOf="@+id/iv_bg" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/defualt_title2">
+        <androidx.cardview.widget.CardView android:id="@+id/rl_theme_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="10dp">
+            <View android:background="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/iv_theme_cover1" android:layout_alignBottom="@+id/iv_theme_cover1" android:layout_centerInParent="true" android:layout_alignStart="@+id/iv_theme_cover1" android:layout_alignEnd="@+id/iv_theme_cover1"/>
+            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@+id/rl_theme_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_alignTop="@+id/iv_theme_cover1" android:layout_alignBottom="@+id/iv_theme_cover1" android:layout_centerInParent="true" android:alpha="0.5" android:layout_alignStart="@+id/iv_theme_cover1" android:layout_alignEnd="@+id/iv_theme_cover1"/>
+                <ImageView android:id="@+id/iv_theme_cover1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f08009e"/>
+                <ImageView android:id="@+id/iv_theme_cover2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0800a1" android:layout_alignTop="@+id/iv_theme_cover1" android:layout_alignBottom="@+id/iv_theme_cover1" android:layout_alignStart="@+id/iv_theme_cover1" android:layout_alignEnd="@+id/iv_theme_cover1"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" app:layout_constraintBottom_toTopOf="@+id/layout_bottom" app:layout_constraintTop_toBottomOf="@+id/iv_bg">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_white" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="10dp" android:layout_marginEnd="5dp">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_theme1_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0801ac"/>
+                <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/tv_theme1_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:text="@string/light_theme" android:layout_alignTop="@+id/iv_theme1_icon" android:layout_alignBottom="@+id/iv_theme1_icon" android:layout_alignStart="@+id/iv_theme1_icon" android:layout_alignEnd="@+id/iv_theme1_icon"/>
+                <ImageView android:id="@+id/iv_select2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:src="0x7f0801ab" android:layout_alignBottom="@+id/iv_theme1_icon" android:layout_marginEnd="15dp" android:layout_alignEnd="@+id/iv_theme1_icon"/>
+            </RelativeLayout>
+            <TextView android:textColor="@color/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/theme_1"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_black" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="10dp">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_theme2_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0801aa"/>
+                <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/tv_theme2_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15dp" android:text="@string/dark_theme2" android:layout_alignTop="@+id/iv_theme2_icon" android:layout_alignBottom="@+id/iv_theme2_icon" android:layout_alignStart="@+id/iv_theme2_icon" android:layout_alignEnd="@+id/iv_theme2_icon"/>
+                <ImageView android:id="@+id/iv_select3" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:src="0x7f0801ab" android:layout_alignBottom="@+id/iv_theme2_icon" android:layout_marginEnd="15dp" android:layout_alignEnd="@+id/iv_theme2_icon"/>
+            </RelativeLayout>
+            <TextView android:textColor="@color/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/theme_2"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_custom" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_custom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f0801a9"/>
+                <ImageView android:id="@+id/iv_select1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:src="0x7f0801ab" android:layout_alignBottom="@+id/iv_custom" android:layout_marginEnd="15dp" android:layout_alignEnd="@+id/iv_custom"/>
+            </RelativeLayout>
+            <TextView android:textColor="@color/default_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/custom"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/layout_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintTop_toBottomOf="@+id/ll_bottom">
+        <LinearLayout android:orientation="vertical" android:id="@+id/ad_layout" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="20sp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/splash_start" android:background="@drawable/splash_button_shape" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="200dp" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:text="@string/splash_start2" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

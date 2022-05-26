@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:id="@+id/item_option_shape" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/option_image" android:background="@drawable/popup_item_shape" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_library_more_palynext2" android:scaleType="centerCrop" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/ll_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="5dp" android:layout_below="@+id/option_image">
+            <TextView android:textSize="14sp" android:textColor="@color/default_text_color" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/option_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:lines="1" android:layout_above="@+id/option_tip" android:layout_centerHorizontal="true" android:layout_alignWithParentIfMissing="true" android:textDirection="locale"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/rl_bottom" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/sound_effect_set" android:layout_width="match_parent" android:layout_height="10dp" android:text="@string/sound_set" android:textDirection="locale"/>
+        <TextView android:textSize="12sp" android:textColor="@drawable/item_accet_color_selector" android:gravity="center" android:id="@+id/tv_nomal" android:layout_width="match_parent" android:layout_height="10dp" android:text="@string/reset" android:textDirection="locale"/>
+    </RelativeLayout>
+</RelativeLayout>

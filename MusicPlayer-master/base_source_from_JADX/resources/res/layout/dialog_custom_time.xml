@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/dialog_layout" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="@color/white" app:cardCornerRadius="10dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="20sp" android:textColor="@color/black" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/custom_time" android:layout_marginStart="20dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="20dp">
+            <com.coocent.sleeptimer.view.WheelView android:id="@+id/wv_hour" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingEnd="30dp" android:layout_toStartOf="@+id/tv_colon"/>
+            <TextView android:textSize="16sp" android:textColor="@color/transBlack" android:id="@+id/tv_hour" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="h" android:layout_centerVertical="true" android:paddingEnd="5dp" android:layout_alignEnd="@+id/wv_hour"/>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/tv_colon" android:layout_alignBottom="@+id/tv_colon" android:layout_centerInParent="true" android:layout_alignStart="@+id/wv_hour" android:layout_alignEnd="@+id/tv_hour">
+                <View android:id="@+id/line1" android:background="@color/transBlack" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <View android:id="@+id/line2" android:background="@color/transBlack" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="16sp" android:textColor="@color/transBlack" android:id="@+id/tv_colon" android:padding="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=":" android:layout_centerInParent="true"/>
+            <com.coocent.sleeptimer.view.WheelView android:id="@+id/wv_minute" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_centerVertical="true" android:paddingEnd="30dp" android:layout_toEndOf="@+id/tv_colon"/>
+            <TextView android:textSize="16sp" android:textColor="@color/transBlack" android:id="@+id/tv_minute" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="m" android:layout_centerVertical="true" android:layout_marginEnd="5dp" android:layout_alignEnd="@+id/wv_minute"/>
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignTop="@+id/tv_colon" android:layout_alignBottom="@+id/tv_colon" android:layout_centerInParent="true" android:layout_alignStart="@+id/wv_minute" android:layout_alignEnd="@+id/wv_minute">
+                <View android:id="@+id/line3" android:background="@color/transBlack" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <View android:id="@+id/line4" android:background="@color/transBlack" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="15dp" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="5dp" app:cardElevation="0dp">
+                <TextView android:textSize="16sp" android:textColor="@color/colorAccent" android:id="@+id/tv_cancel" android:background="?attr/selectableItemBackground" android:padding="10dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/cancel"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="15dp" app:cardBackgroundColor="@color/transparent" app:cardCornerRadius="5dp" app:cardElevation="0dp">
+                <TextView android:textSize="16sp" android:textColor="@color/colorAccent" android:id="@+id/tv_confirm" android:background="?attr/selectableItemBackground" android:padding="10dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/ok"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

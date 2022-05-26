@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#ffffff" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar android:theme="@style/ThemeOverlay.AppCompat.ActionBar" android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="wrap_content" app:contentInsetStartWithNavigation="0dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_ads" android:background="?attr/actionBarItemBackground" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_ads" android:layout_centerVertical="true" android:contentDescription="@string/ad" android:layout_alignParentEnd="true" app:tint="@android:color/black"/>
+            <net.coocent.android.xmlparser.widget.view.tabs.TabLayout android:id="@+id/layout_tab" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:layout_toStartOf="@+id/iv_ads" app:tabIndicatorColor="@color/prmotion_color_tab"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/toolbar">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/view_pager" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/layout_bottom" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <FrameLayout android:id="@+id/layout_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

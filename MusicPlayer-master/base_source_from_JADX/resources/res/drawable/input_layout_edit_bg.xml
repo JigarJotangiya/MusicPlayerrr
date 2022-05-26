@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <size android:height="20dp" android:width="10dp"/>
+                    <solid android:color="@color/fragment_set_pin_bg"/>
+                </shape>
+            </item>
+            <item android:top="18dp">
+                <shape>
+                    <size android:height="2dp" android:width="10dp"/>
+                    <solid android:color="@color/input_error"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_focused="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <size android:height="20dp" android:width="10dp"/>
+                    <solid android:color="@color/fragment_set_pin_bg"/>
+                </shape>
+            </item>
+            <item android:top="18dp">
+                <shape>
+                    <size android:height="2dp" android:width="10dp"/>
+                    <solid android:color="@color/email_title"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <size android:height="20dp" android:width="10dp"/>
+                    <solid android:color="@color/fragment_set_pin_bg"/>
+                </shape>
+            </item>
+            <item android:top="19dp">
+                <shape>
+                    <size android:height="1dp" android:width="10dp"/>
+                    <solid android:color="@color/edit_default_bg_color"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

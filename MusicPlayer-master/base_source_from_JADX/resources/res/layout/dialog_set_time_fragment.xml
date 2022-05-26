@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/crop_bg_text_color" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_start" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/iv_finish" android:background="?attr/selectableItemBackgroundBorderless" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_choose_finish" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.coocent.musiccutter.view.WheelView android:id="@+id/wv_min" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="15sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:text=":"/>
+        <com.coocent.musiccutter.view.WheelView android:id="@+id/wv_sec" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="15sp" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="."/>
+        <com.coocent.musiccutter.view.WheelView android:id="@+id/wv_dec" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_cancel" android:background="?android:attr/selectableItemBackground" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel_s"/>
+</LinearLayout>

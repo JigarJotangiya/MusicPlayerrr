@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/edit_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/modify_info" android:textDirection="locale"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/first_tv_title" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/edit_title" android:layout_weight="3" android:textDirection="locale"/>
+        <EditText android:textSize="16sp" android:textColor="@color/black" android:id="@+id/tv_title" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_weight="8" android:layout_marginStart="20dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_first_album" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/edit_album" android:layout_weight="3" android:textDirection="locale"/>
+        <EditText android:textSize="16sp" android:textColor="@color/black" android:id="@+id/tv_album" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="" android:layout_weight="8" android:layout_marginStart="20dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_first_artist" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/edit_artists" android:layout_weight="3" android:textDirection="locale"/>
+        <EditText android:textSize="16sp" android:textColor="@color/black" android:id="@+id/tv_artist" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="" android:layout_weight="8" android:layout_marginStart="20dp"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <TextView android:textSize="16sp" android:textColor="@color/colorAccent" android:id="@+id/cancel" android:background="?attr/selectableItemBackground" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="@android:string/cancel" android:layout_toLeftOf="@+id/comfirm" android:textDirection="locale" android:paddingStart="5dp" android:paddingEnd="5dp" android:layout_marginEnd="20dp" android:layout_toStartOf="@+id/comfirm"/>
+        <TextView android:textSize="16sp" android:textColor="@color/colorAccent" android:id="@+id/comfirm" android:background="?attr/selectableItemBackground" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/ok" android:layout_alignParentRight="true" android:textDirection="locale" android:paddingStart="5dp" android:paddingEnd="5dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>

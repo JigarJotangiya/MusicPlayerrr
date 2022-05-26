@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/ivmianbg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/bg_shape" android:scaleType="centerCrop"/>
+    <RelativeLayout android:id="@+id/bottom_control" android:layout_width="match_parent" android:layout_height="match_parent">
+        <coocent.music.player.widget.DeepDefaultTitle android:id="@+id/defualt_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/underline" android:background="@color/title_line_color" android:layout_width="match_parent" android:layout_height="0.1dp" android:layout_below="@+id/defualt_title"/>
+        <RelativeLayout android:background="@color/list_bg_color" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/underline">
+            <ImageView android:id="@+id/iv_skin" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/tv_flow" android:layout_centerInParent="true"/>
+            <TextView android:textColor="@color/default_text_color" android:id="@+id/tv_flow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="1.5M" android:layout_above="@+id/rl_progress" android:layout_alignLeft="@+id/iv_skin" android:layout_alignStart="@+id/iv_skin"/>
+            <TextView android:textColor="@color/default_text_color" android:id="@+id/tv_free" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:text="FREE" android:layout_above="@+id/rl_progress" android:layout_alignRight="@+id/iv_skin" android:layout_alignEnd="@+id/iv_skin"/>
+            <RelativeLayout android:id="@+id/rl_progress" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginBottom="20dp" android:layout_alignLeft="@+id/iv_skin" android:layout_alignRight="@+id/iv_skin" android:layout_alignParentBottom="true" android:layout_alignStart="@+id/iv_skin" android:layout_alignEnd="@+id/iv_skin">
+                <ProgressBar android:id="@+id/progress" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/InitProgressBar"/>
+                <TextView android:textSize="14sp" android:textColor="@color/sound_effect_nomal_shape_color" android:gravity="center" android:id="@+id/tv_progress" android:background="?attr/selectableItemBackgroundBorderless" android:paddingLeft="10dp" android:paddingTop="5dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="DOWNLOAD" android:layout_centerInParent="true" android:paddingStart="10dp" android:paddingEnd="10dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

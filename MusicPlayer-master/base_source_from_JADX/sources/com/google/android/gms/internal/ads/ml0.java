@@ -1,0 +1,7 @@
+package com.google.android.gms.internal.ads;
+
+/* compiled from: com.google.android.gms:play-services-ads-lite@@20.6.0 */
+public interface ml0 {
+    /* renamed from: p */
+    void mo11120p(String str);
+}

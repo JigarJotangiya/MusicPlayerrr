@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:id="@+id/bottom_multi_option_layout" android:background="@color/bottom_multi_option_layout_bg" android:paddingTop="5dp" android:paddingBottom="5dp" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/temp_view" android:animateLayoutChanges="true">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_add_to_queue" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_add_to_queue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/add_to_queue_icon_selector"/>
+        <TextView android:textSize="14sp" android:textColor="@drawable/bottom_option_text_color_selector" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_add_to_queue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_to_queue" android:maxLines="2"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_add_to_playlist" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_add_to_playlist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/add_to_playlist_icon_selector"/>
+        <TextView android:textSize="14sp" android:textColor="@drawable/bottom_option_text_color_selector" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_add_to_playlist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/music_eq_add_to_playlist" android:maxLines="2"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_multi_remove" android:background="?attr/selectableItemBackground" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_multi_remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_library_more_remove"/>
+        <TextView android:textSize="14sp" android:textColor="@drawable/bottom_option_text_color_selector" android:id="@+id/tv_multi_remove" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coocent_remove"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ll_multi_delete" android:background="?attr/selectableItemBackground" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_multi_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/delete_track_icon_selector"/>
+        <TextView android:textSize="14sp" android:textColor="@drawable/bottom_option_text_color_selector" android:gravity="center" android:layout_gravity="center" android:id="@+id/tv_multi_delete" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coocent_delete" android:maxLines="2"/>
+    </LinearLayout>
+</LinearLayout>

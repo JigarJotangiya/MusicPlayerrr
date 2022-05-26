@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.gms.ads.nativead.NativeAdView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/ads_main" android:background="#1affffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ads_second" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ads_three" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_ads_left" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.35">
+                <RelativeLayout android:id="@+id/rl_image" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginLeft="-17dp" android:layout_marginStart="-17dp">
+                    <com.google.android.gms.ads.nativead.MediaView android:layout_gravity="center" android:id="@+id/contentad_image" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/ll_contentad_headline" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.5">
+                <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/contentad_headline" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="20dp" android:layout_marginEnd="20dp"/>
+                <TextView android:textSize="10sp" android:textColor="#ffffff" android:id="@+id/contentad_body" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <LinearLayout android:layout_gravity="end" android:orientation="horizontal" android:id="@+id/ll_contentad_call_to_action" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:id="@+id/contentad_call_to_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_marginEnd="5dp"/>
+                    <TextView android:textSize="11sp" android:textStyle="bold" android:textColor="#ffffff" android:id="@+id/contentad_advertiser" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_marginEnd="5dp"/>
+                    <ImageView android:id="@+id/contentad_logo" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginRight="8dp" android:layout_marginEnd="8dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/rl_ad_close" android:background="#20000000" android:paddingLeft="5dp" android:paddingTop="2dp" android:paddingRight="5dp" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <TextView android:textSize="10sp" android:textColor="#ffffff" android:id="@+id/ad_frag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AD" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/ad_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:scaleType="centerCrop" android:text="×" android:layout_toRightOf="@+id/ad_frag" android:layout_marginStart="10dp" android:layout_toEndOf="@+id/ad_frag"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</com.google.android.gms.ads.nativead.NativeAdView>

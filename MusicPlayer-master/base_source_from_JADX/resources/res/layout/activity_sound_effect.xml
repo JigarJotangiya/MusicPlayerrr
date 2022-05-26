@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/effect_bg" android:focusableInTouchMode="true" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/title_layout" android:background="@color/effect_bg" android:layout_width="match_parent" android:layout_height="56dp" android:paddingStart="10dp" android:paddingEnd="10dp">
+        <ImageView android:id="@+id/iv_back" android:background="?attr/selectableItemBackgroundBorderless" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sound_ic_return" android:layout_centerVertical="true" app:tint="@color/effect_textcolor"/>
+        <ImageView android:id="@+id/iv_equalizer" android:background="?attr/selectableItemBackgroundBorderless" android:padding="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sound_ic_equalzier" android:layout_centerVertical="true" android:layout_alignParentEnd="true" app:tint="@color/effect_textcolor"/>
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/ad_layout" android:layout_below="@+id/title_layout" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/sound_bg" android:scaleType="centerCrop"/>
+            <RelativeLayout android:background="@drawable/bg_current_use" android:layout_width="match_parent" android:layout_height="74dp" android:layout_marginTop="30dp" android:paddingStart="10dp" android:paddingEnd="15dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+                <TextView android:textSize="12sp" android:textColor="@color/effect_textcolor" android:id="@+id/tv_current_use" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="@string/current_use"/>
+                <TextView android:textSize="13sp" android:textColor="@color/effect_textcolor" android:id="@+id/tv_sound_effect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/effect_sound_effect" android:layout_below="@+id/tv_current_use"/>
+                <TextView android:textSize="18sp" android:textColor="@color/effect_textcolor" android:id="@+id/tv_current_effect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/equalizer2_none" android:singleLine="true" android:layout_alignBaseline="@+id/tv_sound_effect" android:layout_marginStart="5dp" android:layout_marginEnd="5dp" android:layout_toStartOf="@+id/iv_switch" android:layout_toEndOf="@+id/tv_sound_effect"/>
+                <ImageView android:id="@+id/iv_switch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sound_effect_switch_selector" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="13sp" android:textColor="@color/effect_textcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/effect_sound_effects" android:layout_marginStart="20dp"/>
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_effect" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <FrameLayout android:id="@+id/ad_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

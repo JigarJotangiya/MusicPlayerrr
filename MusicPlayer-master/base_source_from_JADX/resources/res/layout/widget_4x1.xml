@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/widgetLayout" android:background="#80000000" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/widget_iv_album_pic" android:layout_width="80dp" android:layout_height="match_parent" android:scaleType="centerCrop" android:adjustViewBounds="true" android:minWidth="80dp"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/ll_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/bottomLayout" android:layout_marginStart="15dp">
+                <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center_horizontal" android:id="@+id/widget_tv_small_music_title" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:scrollHorizontally="true" android:singleLine="true"/>
+                <TextView android:textSize="11sp" android:textColor="#66ffffff" android:gravity="center_horizontal" android:id="@+id/widget_tv" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" - " android:scrollHorizontally="true" android:singleLine="true"/>
+                <TextView android:textSize="11sp" android:textColor="#66ffffff" android:gravity="center_horizontal" android:id="@+id/widget_tv_small_music_artist" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_name" android:scrollHorizontally="true" android:singleLine="true" android:layout_above="@+id/bottomLayout"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layoutDirection="ltr" android:paddingStart="15dp" android:paddingEnd="15dp">
+                <ImageButton android:id="@+id/btnPrevious" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/desktop_4and1_button02_backward_select" android:layout_weight="1" android:layout_marginEnd="7dp"/>
+                <ImageButton android:id="@+id/btnPlay" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/desktop_4and1_button02_play_select" android:adjustViewBounds="true" android:layout_weight="1"/>
+                <ImageButton android:id="@+id/btnNext" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="wrap_content" android:src="@drawable/desktop_4and1_button03_forward_select" android:adjustViewBounds="true" android:layout_weight="1" android:layout_marginStart="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="100dp"/>
+            <stroke android:width="2dp" android:color="@color/sound_effect_nomal_shape_color"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress">
+        <clip>
+            <shape>
+                <corners android:radius="100dp"/>
+                <stroke android:width="2dp" android:color="@color/default_text_color"/>
+            </shape>
+        </clip>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="100dp"/>
+                <solid android:width="2dp" android:color="@color/half_sound_effect_nomal_shape_color"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

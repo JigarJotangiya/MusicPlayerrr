@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:id="@+id/ll_conctrol" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/prev" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="前一首"/>
+        <Button android:id="@+id/playorpause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="播放暂停" android:layout_marginStart="15dp"/>
+        <Button android:id="@+id/next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="后一首" android:layout_marginStart="15dp"/>
+        <Button android:id="@+id/animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="动画" android:layout_marginStart="15dp"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rl_bottom_layout" android:layout_below="@+id/ll_conctrol"/>
+    <RelativeLayout android:id="@+id/rl_bottom_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:animateLayoutChanges="true">
+        <RelativeLayout android:id="@+id/rl_bottom_bar_group" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true">
+            <View android:id="@+id/view_temp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="55dp"/>
+            <coocent.music.player.widget.NoScrollTabLayout android:id="@+id/tabs" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/view_temp" app:tabBackground="@color/transparent" app:tabIndicatorColor="@color/transparent" app:tabIndicatorHeight="1dp" app:tabRippleColor="@color/transparent" app:tabSelectedTextColor="@color/transparent" app:tabTextAppearance="@style/Full_myTabLayoutTextAppearance" app:tabTextColor="@color/default_text_color"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/adlayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tabs"/>
+            <include layout="@layout/bottom_play_bar"/>
+            <include layout="@layout/bottom_option_layout"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/temp_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/rl_bottom_bar_group" android:animateLayoutChanges="false"/>
+    </RelativeLayout>
+</RelativeLayout>

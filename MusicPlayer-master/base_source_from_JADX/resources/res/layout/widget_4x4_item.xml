@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="#08ffffff" android:clickable="true" android:layout_width="match_parent" android:layout_height="60dp">
+    <RelativeLayout android:id="@+id/rl_item_layout" android:background="@drawable/wiget_item_clickable" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/circleMusic" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:scaleType="centerCrop" android:layout_centerVertical="true" android:layout_marginStart="12dp" android:layout_marginEnd="12dp"/>
+        <ImageView android:id="@+id/moreBtn" android:layout_width="0dp" android:layout_height="match_parent" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true"/>
+        <TextView android:textSize="11sp" android:textColor="#66ffffff" android:id="@+id/timeTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:layout_toLeftOf="@+id/moreBtn" android:layout_centerVertical="true" android:layout_marginEnd="15dp" android:layout_toStartOf="@+id/moreBtn"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginRight="5dp" android:layout_toLeftOf="@+id/timeTxt" android:layout_toRightOf="@+id/circleMusic" android:layout_marginEnd="5dp" android:layout_toStartOf="@+id/timeTxt" android:layout_toEndOf="@+id/circleMusic">
+            <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/titleTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <TextView android:textSize="11sp" android:textColor="#66ffffff" android:ellipsize="end" android:id="@+id/artistTxt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:maxLines="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

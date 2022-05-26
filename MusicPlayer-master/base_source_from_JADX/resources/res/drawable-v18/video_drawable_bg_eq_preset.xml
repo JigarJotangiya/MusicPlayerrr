@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_enabled="true" android:state_checked="false">
+        <shape android:shape="rectangle">
+            <stroke android:width="1dp" android:color="@android:color/white"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false" android:state_checked="false">
+        <shape android:shape="rectangle">
+            <stroke android:width="1dp" android:color="#a6ffffff"/>
+            <corners android:radius="12dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_checked="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp"/>
+            <solid android:color="@color/videoColorSecondary_dark"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false" android:state_checked="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="12dp"/>
+            <solid android:color="@color/videoColorSecondaryVariant_dark"/>
+        </shape>
+    </item>
+</selector>

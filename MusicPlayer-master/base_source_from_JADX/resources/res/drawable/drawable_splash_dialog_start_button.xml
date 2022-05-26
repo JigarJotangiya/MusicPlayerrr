@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:state_enabled="true" android:state_pressed="true">
+        <shape>
+            <gradient android:startColor="@color/splashButtonPressedStartColor" android:endColor="@color/splashButtonPressedEndColor" android:angle="0"/>
+            <corners android:radius="32dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <gradient android:startColor="@color/splashButtonDisableStartColor" android:endColor="@color/splashButtonDisableEndColor" android:angle="0"/>
+            <corners android:radius="32dp"/>
+        </shape>
+    </item>
+    <item android:state_enabled="true" android:state_pressed="false">
+        <shape>
+            <gradient android:startColor="@color/splashButtonStartColor" android:endColor="@color/splashButtonEndColor" android:angle="0"/>
+            <corners android:radius="32dp"/>
+        </shape>
+    </item>
+</selector>

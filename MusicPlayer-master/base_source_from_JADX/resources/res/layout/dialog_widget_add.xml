@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@color/widget_dialog_bg" android:layout_width="280dp" android:layout_height="346dp">
+    <TextView android:textSize="15dp" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/widget_add"/>
+    <TextView android:textSize="12dp" android:textColor="@color/floating_artist_color" android:id="@+id/tv_detail" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_widget_left"/>
+            <androidx.viewpager.widget.ViewPager android:id="@+id/view_pager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+                <coocent.music.player.widget.ZoomImageView android:id="@+id/image_show" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </androidx.viewpager.widget.ViewPager>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/iv_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_widget_right"/>
+        </LinearLayout>
+        <RadioGroup android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/rg_widget" android:layout_width="70dp" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <RadioButton android:id="@+id/rb_widget1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/selector_radio_button" android:layout_weight="1"/>
+            <RadioButton android:id="@+id/rb_widget2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_radio_button" android:layout_weight="1"/>
+            <RadioButton android:id="@+id/rb_widget3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_radio_button" android:layout_weight="1"/>
+            <RadioButton android:id="@+id/rb_widget4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/selector_radio_button" android:layout_weight="1"/>
+        </RadioGroup>
+    </RelativeLayout>
+</LinearLayout>

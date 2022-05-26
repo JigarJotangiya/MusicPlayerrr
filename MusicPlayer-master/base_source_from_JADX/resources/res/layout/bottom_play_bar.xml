@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/bottom_play_bar" android:layout_width="match_parent" android:layout_height="55dp" android:animateLayoutChanges="true" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+    <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="60dp" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@+id/iv_play_bar_bg" android:background="@drawable/bottom_play_bar_bg_light_shape" android:layout_width="match_parent" android:layout_height="45dp" android:layout_centerVertical="true"/>
+        <RelativeLayout android:id="@+id/rl_bottom_viewpager" android:layout_width="match_parent" android:layout_height="45dp" android:layout_centerVertical="true" android:layout_marginStart="60dp" android:layout_toStartOf="@+id/rl_play_pause"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/rl_bottom_no_track" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp" android:layout_centerVertical="true">
+            <coocent.music.player.widget.SquareImageView android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/home08_bg2" android:scaleType="centerCrop"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:paddingStart="30dp">
+                <TextView android:textSize="14sp" android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/defualt_song_title"/>
+                <TextView android:textSize="10sp" android:textColor="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/defualt_song_artist"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_playlist" android:background="?attr/selectableItemBackgroundBorderless" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_home08_queue" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true"/>
+        <RelativeLayout android:id="@+id/rl_play_pause" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="15dp" android:layout_toStartOf="@+id/iv_playlist">
+            <com.coocent.roundprogressview.RoundProgressView android:id="@+id/progress" android:layout_width="30dp" android:layout_height="30dp" android:layout_centerInParent="true" app:RoundProgressRadius="2dp"/>
+            <ImageView android:id="@+id/iv_playpause" android:background="?attr/selectableItemBackgroundBorderless" android:padding="5dp" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_home05_pause" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <coocent.music.player.visualizer.SquareMusicImageView android:id="@+id/iv_album" android:layout_width="55dp" android:layout_height="55dp" android:src="@drawable/home08_bg2" android:scaleType="centerCrop" android:layout_centerVertical="true" app:riv_oval="true"/>
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_album_bg" android:layout_width="55dp" android:layout_height="55dp" android:scaleType="centerCrop" android:layout_centerVertical="true" app:riv_oval="true"/>
+</RelativeLayout>

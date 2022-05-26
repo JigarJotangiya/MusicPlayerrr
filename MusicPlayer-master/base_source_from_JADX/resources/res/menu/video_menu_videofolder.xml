@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="0x7f0804f7" android:id="@+id/action_search" android:orderInCategory="0" android:title="@string/coocent_search" app:showAsAction="ifRoom"/>
+    <item android:id="@+id/action_select_all" android:orderInCategory="1" android:title="@string/coocent_select_all" app:showAsAction="never"/>
+    <item android:id="@+id/action_encrypted" android:orderInCategory="2" android:title="@string/video_encrypted_video" app:showAsAction="never"/>
+    <item android:id="@+id/action_sort" android:orderInCategory="3" android:title="@string/coocent_sort_by" app:showAsAction="never"/>
+    <item android:id="@+id/action_view" android:orderInCategory="4" android:title="@string/coocent_view" app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/action_view_list" android:title="@string/coocent_video_music_eq_pref_lists"/>
+            <item android:id="@+id/action_view_grid" android:title="@string/coocent_video_music_eq_grid"/>
+        </menu>
+    </item>
+</menu>

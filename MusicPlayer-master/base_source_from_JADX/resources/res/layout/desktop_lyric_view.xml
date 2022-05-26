@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/desktop_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_marginEnd="10dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/title_layout" android:background="@color/desktop_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_music" android:padding="10dp" android:layout_width="40dp" android:layout_height="wrap_content" android:src="@drawable/lyrics_music"/>
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_title" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_close" android:padding="10dp" android:layout_width="40dp" android:layout_height="match_parent" android:src="@drawable/lyrics_close"/>
+    </LinearLayout>
+    <com.coocent.lyriclibrary.view.TwoLyricView android:id="@+id/twoLyricView" android:background="@color/desktop_bg_color" android:layout_width="match_parent" android:layout_height="60dp" app:twoLyricCurrentDefaultTextColor="@color/white" app:twoLyricDefaultLabel="@string/lyrics_no_find" app:twoLyricMaxLine="2" app:twoLyricNormalTextColor="@color/white" app:twoLyricShowStroke="true" app:twoLyricTextBold="true"/>
+    <com.coocent.lyriclibrary.view.HorProgressView android:id="@+id/progressView" android:background="@color/desktop_bg_color" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/play_layout" android:background="@color/desktop_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_lock" android:background="?android:attr/selectableItemBackground" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/lyrics_lock" android:scaleType="center" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_prev" android:background="?android:attr/selectableItemBackground" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/lyrics_previous" android:scaleType="center" android:layout_weight="2"/>
+        <ImageView android:id="@+id/iv_play" android:background="?android:attr/selectableItemBackground" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/lyrics_play" android:scaleType="center" android:layout_weight="2"/>
+        <ImageView android:id="@+id/iv_next" android:background="?android:attr/selectableItemBackground" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/lyrics_next" android:scaleType="center" android:layout_weight="2"/>
+        <ImageView android:id="@+id/iv_setting" android:background="?android:attr/selectableItemBackground" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/lyrics_setting" android:scaleType="center" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/setting_layout" android:background="@color/desktop_bg_color" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/iv_color1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lyrics_text_color_selector1" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_color2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lyrics_text_color_selector2" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_color3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lyrics_text_color_selector3" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_color4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lyrics_text_color_selector4" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_color5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lyrics_text_color_selector5" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_color6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/lyrics_text_color_selector6" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_zoom_out" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/lyrics_zoom_out_on" android:layout_weight="1"/>
+        <ImageView android:id="@+id/iv_zoom_in" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/lyrics_zoom_in_on" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

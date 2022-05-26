@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center_vertical" android:orientation="horizontal" android:background="?attr/selectableItemBackground" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="10dp">
+    <RadioButton android:id="@+id/item_radio" android:background="@null" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp"/>
+    <TextView android:textSize="16sp" android:textColor="@color/black" android:id="@+id/item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/custom"/>
+    <TextView android:textSize="14sp" android:textColor="@color/transBlack" android:id="@+id/item_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00:00" android:layout_marginStart="20dp"/>
+</LinearLayout>

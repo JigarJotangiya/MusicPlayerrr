@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/relate_bg" android:padding="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#000000" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/related_lyr"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <TextView android:textSize="16sp" android:textColor="#000000" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/related_lyr_tip"/>
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+        <TextView android:textSize="14sp" android:textColor="@color/colorAccent" android:id="@+id/delete" android:background="?attr/selectableItemBackground" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18sp" android:text="@string/clean" android:paddingStart="5dp" android:paddingEnd="5dp" android:layout_marginEnd="18sp"/>
+        <TextView android:textSize="14sp" android:textColor="@color/colorAccent" android:id="@+id/cancel" android:background="?attr/selectableItemBackground" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="18sp" android:text="@string/online" android:layout_toLeftOf="@+id/comfirm" android:paddingStart="5dp" android:paddingEnd="5dp" android:layout_marginEnd="18sp" android:layout_toStartOf="@+id/comfirm"/>
+        <TextView android:textSize="14sp" android:textColor="@color/colorAccent" android:id="@+id/comfirm" android:background="?attr/selectableItemBackground" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/local" android:paddingStart="5dp" android:paddingEnd="5dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+</LinearLayout>

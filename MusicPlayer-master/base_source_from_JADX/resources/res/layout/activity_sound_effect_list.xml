@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@color/sound_effect_bg_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.core.widget.NestedScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="15dp">
+        <RelativeLayout android:orientation="vertical" android:id="@+id/rl_root" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop"/>
+            <RelativeLayout android:id="@+id/bottom_control" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/iv_sound_effect" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="70dp" android:src="@drawable/sound_bg" android:scaleType="centerCrop" android:layout_centerHorizontal="true"/>
+                <RelativeLayout android:id="@+id/rl_current_using" android:background="@drawable/item_sound_current_use_bg_shape" android:layout_width="match_parent" android:layout_height="74dp" android:layout_marginTop="30dp" android:layout_below="@+id/iv_sound_effect" android:paddingStart="15dp" android:paddingEnd="18dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+                    <TextView android:textSize="12sp" android:textColor="@color/white" android:id="@+id/tv_current_using" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/current_using_effect"/>
+                    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/tv_current_using" android:layout_toStartOf="@+id/sound_grid">
+                        <TextView android:textSize="13sp" android:textColor="@color/white" android:id="@+id/tv_effect_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coocent_effect" android:layout_centerVertical="true"/>
+                        <TextView android:textSize="18sp" android:textColor="@color/colorAccent" android:ellipsize="end" android:id="@+id/tv_effect_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3D Reverse" android:lines="1" android:layout_centerVertical="true" android:layout_marginStart="20dp" android:layout_toEndOf="@+id/tv_effect_text"/>
+                    </RelativeLayout>
+                    <ImageView android:gravity="center" android:id="@+id/sound_grid" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerVertical="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+                <TextView android:textSize="14sp" android:textColor="@color/white" android:id="@+id/tv_sound_effect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/sound_effect" android:layout_below="@+id/rl_current_using" android:layout_marginStart="15dp"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/recylerview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tv_sound_effect"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+    <RelativeLayout android:id="@+id/rl_defualt_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <coocent.music.player.widget.DeepDefaultTitle android:id="@+id/defualt_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</RelativeLayout>

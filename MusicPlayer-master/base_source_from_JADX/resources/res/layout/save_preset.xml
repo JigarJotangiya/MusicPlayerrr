@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@color/color_bbb" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/top_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="#ffffff" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Save Preset" android:layout_centerVertical="true" style="@style/TextAppearance.Large"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/top_layout">
+        <EditText android:textColor="#ffffff" android:id="@+id/rename_etv" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="24dp" android:layout_marginRight="16dp" android:layout_marginBottom="24dp" android:hint="" android:singleLine="true" android:textDirection="locale" android:paddingStart="5dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+        <TextView android:textSize="18sp" android:textColor="#ffffff" android:id="@+id/save" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/eq_save" android:layout_below="@+id/rename_etv" android:layout_alignRight="@+id/rename_etv" android:layout_alignEnd="@+id/rename_etv"/>
+        <TextView android:textSize="18sp" android:textColor="#ffffff" android:id="@+id/cancel" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/cancel" android:layout_toLeftOf="@+id/save" android:layout_below="@+id/rename_etv" android:layout_marginStart="8dp" android:layout_toStartOf="@+id/save"/>
+    </RelativeLayout>
+</RelativeLayout>

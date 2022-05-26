@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/playListLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/iv_play_backgroud" android:background="@drawable/library_more_bg1" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_alignBottom="@+id/rl_content"/>
+    <RelativeLayout android:id="@+id/rl_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerview" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:fadeScrollbars="true"/>
+        <View android:id="@+id/line" android:background="@color/main_1a_black" android:layout_width="match_parent" android:layout_height="0.1dp" android:layout_below="@+id/recyclerview"/>
+        <RelativeLayout android:id="@+id/rl_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/line">
+            <TextView android:textSize="16sp" android:textColor="@color/default_text_color" android:gravity="center" android:id="@+id/tv_nomal" android:background="?attr/selectableItemBackground" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/percentLayout" android:paddingTop="10dp" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_bass_val" android:layout_width="0dp" android:layout_height="wrap_content" android:text="50%" android:layout_weight="1"/>
+        <TextView android:textSize="16sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/tv_3d_val" android:layout_width="0dp" android:layout_height="wrap_content" android:text="50%" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/ll_1" android:layout_width="match_parent" android:layout_height="180dp">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <coocent.music.player.widget.ArcProgressView android:id="@+id/ac_bass_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+            <coocent.music.player.widget.ArcProgressView android:id="@+id/ac_bass_level" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+            <coocent.music.player.widget.RotatView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:buttonClosed="0x7f08014f" app:buttonDefault="0x7f08014f" app:buttonSelected="0x7f08014f"/>
+            <coocent.music.player.widget.RotatView android:id="@+id/rv_bass" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:buttonClosed="0x7f080150" app:buttonDefault="0x7f08014e" app:buttonSelected="0x7f08014c"/>
+            <ImageView android:id="@+id/iv_bass_switch" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f080159" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <coocent.music.player.widget.ArcProgressView android:id="@+id/ac_3d_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+            <coocent.music.player.widget.ArcProgressView android:id="@+id/ac_3d_level" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+            <coocent.music.player.widget.RotatView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:buttonClosed="0x7f08014f" app:buttonDefault="0x7f08014f" app:buttonSelected="0x7f08014f"/>
+            <coocent.music.player.widget.RotatView android:id="@+id/rv_3d" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:buttonClosed="0x7f080150" app:buttonDefault="0x7f08014e" app:buttonSelected="0x7f08014c"/>
+            <ImageView android:id="@+id/iv_3d_switch" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="0x7f080159" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_rotate_text_root" android:paddingTop="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/ll_1">
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/coocent_bass_booster" android:layout_weight="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/white" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/rotate3d" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

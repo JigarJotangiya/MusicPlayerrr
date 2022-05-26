@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_recent_add" android:background="?attr/selectableItemBackground" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_recently_add" android:background="@drawable/playlist_top_item_bg_shape" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_home_lists_pressed_added"/>
+        <TextView android:textSize="16sp" android:textColor="@color/default_text_color" android:id="@+id/tvAdd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/last_added"/>
+        <TextView android:textSize="12sp" android:textColor="@color/default_sub_text_color" android:id="@+id/tvAddCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="0"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_recent_play" android:background="?attr/selectableItemBackground" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_recently_play" android:background="@drawable/playlist_top_item_bg_shape" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_home_lists_pressed_play"/>
+        <TextView android:textSize="16sp" android:textColor="@color/default_text_color" android:id="@+id/tvPlay" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/recent"/>
+        <TextView android:textSize="12sp" android:textColor="@color/default_sub_text_color" android:id="@+id/tvPlayCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="0"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_favorite" android:background="?attr/selectableItemBackground" android:paddingTop="20dp" android:paddingBottom="20dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <ImageView android:id="@+id/iv_favorite" android:background="@drawable/playlist_top_item_bg_shape" android:layout_width="50dp" android:layout_height="50dp" android:src="@drawable/ic_library_more_favorite"/>
+        <TextView android:textSize="16sp" android:textColor="@color/default_text_color" android:id="@+id/tvFavorite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/favorites"/>
+        <TextView android:textSize="12sp" android:textColor="@color/default_sub_text_color" android:id="@+id/tvFavoriteCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="0"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/playListLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/cover_view" android:background="@drawable/custom_theme_now_playing_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.makeramen.roundedimageview.RoundedImageView android:id="@+id/iv_play_backgroud" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <RelativeLayout android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageView android:id="@+id/iv_play_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_playlist03_shuffle_playback" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+        <TextView android:textSize="15sp" android:id="@+id/playlist_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="10dp" android:layout_marginEnd="10dp" android:layout_toEndOf="@+id/iv_play_mode"/>
+        <ImageView android:id="@+id/iv_add_to_playlist" android:background="?attr/selectableItemBackgroundBorderless" android:padding="3dp" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_playlist04_add_queue" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:layout_marginEnd="15dp" android:layout_toStartOf="@+id/empty_list"/>
+        <ImageView android:id="@+id/empty_list" android:background="?attr/selectableItemBackgroundBorderless" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/ic_playlist05_clear_list" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+        <View android:id="@+id/line1" android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="0.1dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/line2" android:layout_below="@+id/title_bar" android:fadeScrollbars="true"/>
+    <View android:id="@+id/line2" android:background="@color/line_color" android:layout_width="match_parent" android:layout_height="0.1dp" android:layout_above="@+id/tv_cancel"/>
+    <TextView android:textSize="16sp" android:textColor="@color/default_text_color" android:gravity="center" android:id="@+id/tv_cancel" android:background="?attr/selectableItemBackground" android:padding="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/action_close" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="18dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_title_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_centerHorizontal="true"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp" android:layout_marginEnd="8dp"/>
+    <androidx.appcompat.widget.AppCompatTextView android:textSize="16sp" android:textColor="?attr/videoTextColorPrimary" android:id="@+id/tv_encrypted" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/iv_title_icon" android:layout_toEndOf="@+id/iv_icon"/>
+</RelativeLayout>

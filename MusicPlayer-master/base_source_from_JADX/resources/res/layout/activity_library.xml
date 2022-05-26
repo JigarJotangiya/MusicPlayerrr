@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.drawerlayout.widget.DrawerLayout android:orientation="vertical" android:id="@+id/drawerLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/content" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <View android:id="@+id/bg_cover" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+                <ImageView android:id="@+id/library_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                <RelativeLayout android:id="@+id/bottomcontrol" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/rl_bottom_layout" android:animateLayoutChanges="false">
+                    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/coordinator" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <com.google.android.material.appbar.AppBarLayout android:id="@+id/appbar" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:animateLayoutChanges="false" app:elevation="0dp">
+                            <include layout="@layout/custom_title"/>
+                            <View android:id="@+id/underline" android:background="@color/title_line_color" android:layout_width="match_parent" android:layout_height="0.1dp" android:layout_below="@+id/defualt_title"/>
+                        </com.google.android.material.appbar.AppBarLayout>
+                        <RelativeLayout android:orientation="vertical" android:id="@+id/rl_v_root" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/appbar" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                            <coocent.music.player.widget.NoScrollViewPager android:id="@+id/viewpager" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                        </RelativeLayout>
+                        <coocent.music.player.widget.AnimFab android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/fab" android:tag="bg_tint_accent_color" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="25dp" android:scaleType="centerInside" android:layout_marginEnd="10dp" app:backgroundTint="@color/colorAccent" app:elevation="0dp" app:layout_anchorGravity="800055" app:layout_behavior="coocent.music.player.widget.FloatingActionButtonBehavior"/>
+                    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                    <FrameLayout android:id="@+id/fragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                    <com.miguelcatalan.materialsearchview.MaterialSearchView android:id="@+id/search_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    <coocent.music.player.widget.DeepSelectTitle android:id="@+id/select_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/rl_bottom_layout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/temp_view" android:animateLayoutChanges="true">
+                    <include layout="@layout/bottom_play_bar"/>
+                    <RelativeLayout android:id="@+id/tabs_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/bottom_play_bar">
+                        <coocent.music.player.widget.NoScrollTabLayout android:id="@+id/tabs" android:layout_width="match_parent" android:layout_height="wrap_content" app:tabBackground="@color/transparent" app:tabIndicatorColor="@color/transparent" app:tabIndicatorHeight="1dp" app:tabPaddingEnd="3dp" app:tabPaddingStart="3dp" app:tabRippleColor="@color/transparent" app:tabSelectedTextColor="@color/transparent" app:tabTextAppearance="@style/Full_myTabLayoutTextAppearance" app:tabTextColor="@color/default_text_color"/>
+                    </RelativeLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/adlayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/tabs_root"/>
+                    <include layout="@layout/bottom_option_layout"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/temp_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:animateLayoutChanges="false"/>
+            </RelativeLayout>
+            <com.coocent.marquee.view.MarqueeView android:id="@+id/am_sweepView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <RelativeLayout android:id="@+id/loading_cover" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <coocent.musiclibrary.music.view.PermissionRequestDetailView android:id="@+id/permissionRequestDetailView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="start" android:layout_width="wrap_content" android:layout_height="match_parent">
+            <View android:id="@+id/nav_bg_cover" android:background="@color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignEnd="@+id/nav_view"/>
+            <ImageView android:id="@+id/nav_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_alignEnd="@+id/nav_view"/>
+            <com.google.android.material.navigation.NavigationView android:layout_gravity="start" android:id="@+id/nav_view" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="match_parent" app:elevation="0dp" app:headerLayout="@layout/nav_header" app:insetForeground="@color/transparent" app:itemIconTint="@color/main_draw_color" app:itemTextColor="@color/main_draw_color"/>
+        </RelativeLayout>
+    </androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>

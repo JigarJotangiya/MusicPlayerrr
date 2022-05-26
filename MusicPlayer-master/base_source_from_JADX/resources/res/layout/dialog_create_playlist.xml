@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:padding="16dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="20sp" android:textColor="@color/black" android:id="@+id/tv_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/music_eq_create_playlist"/>
+    <RelativeLayout android:id="@+id/rl_et" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/tv_title">
+        <androidx.appcompat.widget.AppCompatEditText android:textColor="@color/black" android:textColorHint="@color/half_black" android:id="@+id/et_playlist_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/music_eq_please_enter_name" android:textCursorDrawable="@null" android:textAlignment="viewStart"/>
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_close" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="10dp" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_clear"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="right|center_vertical|center_horizontal|center|end" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_below="@+id/rl_et">
+        <TextView android:textSize="16sp" android:textColor="@color/colorAccent" android:id="@+id/tv_cancel" android:background="?attr/selectableItemBackground" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/cancel" android:paddingStart="16dp" android:paddingEnd="16dp"/>
+        <TextView android:textSize="16sp" android:textColor="@color/colorAccent" android:id="@+id/tv_save" android:background="?attr/selectableItemBackground" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/coocent_save" android:paddingStart="16dp" android:paddingEnd="16dp" android:layout_toEndOf="@+id/tv_cancel"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout_container" android:background="?attr/colorOnBackground" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_folder" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_folder_empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/iv_empty" android:layout_width="94dp" android:layout_height="75dp" android:src="@drawable/video_ic_no_file" android:scaleType="centerCrop"/>
+        <TextView android:textSize="15sp" android:textColor="#ffacacac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17dp" android:text="@string/video_no_folder"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/layout_permission" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.appcompat.widget.AppCompatImageView android:id="@+id/iv_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/photo_jurisdiction"/>
+        <androidx.appcompat.widget.AppCompatTextView android:textColor="?attr/videoPermissionTextColor" android:id="@+id/tv_tips_permission" android:layout_width="203dp" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/coocent_video_external_storage_access"/>
+        <androidx.appcompat.widget.AppCompatButton android:textSize="15sp" android:textColor="?attr/videoTextDurationColor" android:gravity="center" android:id="@+id/btn_permission" android:background="@drawable/video_drawable_permission_btn_bg" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginTop="25dp" android:text="@string/video_permission_btn_title" android:shadowRadius="20" android:paddingStart="50dp" android:paddingEnd="50dp"/>
+    </LinearLayout>
+</FrameLayout>

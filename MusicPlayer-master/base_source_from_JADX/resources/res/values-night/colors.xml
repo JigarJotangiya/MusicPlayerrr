@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="confirm_text_noenabled">#808080</color>
+    <color name="input_layout_edit_text_hint">#808080</color>
+    <color name="promotion_exit_dialog_background_color">#262626</color>
+    <color name="promotion_exit_dialog_btn_bg_disable">#8001875f</color>
+    <color name="promotion_exit_dialog_btn_text_color_disable">#80ffffff</color>
+    <color name="promotion_exit_dialog_gift_bg_color">#414141</color>
+    <color name="promotion_exit_dialog_gift_bg_pressed_color">#515151</color>
+    <color name="promotion_exit_dialog_text_color_primary">#ffffff</color>
+    <color name="promotion_exit_dialog_text_color_secondary">#ffffff</color>
+    <color name="promotion_exit_rate_btn_bg_color">#414141</color>
+    <color name="promotion_exit_rate_btn_bg_pressed_color">#515151</color>
+    <color name="promotion_exit_rate_window_background_color">#000000</color>
+    <color name="videoPlayArrowColor">#ffffff</color>
+</resources>
